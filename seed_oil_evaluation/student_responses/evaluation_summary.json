@@ -1,0 +1,524 @@
+{
+  "evaluated_at": "2025-06-21T16:51:11.457810",
+  "total_conversations": 10,
+  "successful_evaluations": 10,
+  "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
+  "prompt_version": "v1.0",
+  "results": [
+    {
+      "conversation_id": "72624c49-2ebf-479e-99a4-34742cdd2702",
+      "evaluated_at": "2025-06-21T16:51:07.603325",
+      "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
+      "prompt_version": "v1.0",
+      "original_metadata": {
+        "conversation_id": "72624c49-2ebf-479e-99a4-34742cdd2702",
+        "generated_at": "2025-06-21T16:48:59.911851",
+        "difficulty_level": "simple",
+        "user_cooperation_level": "helpful",
+        "conversation_completeness": "complete",
+        "expected_seed_oil_sources": [
+          "fries",
+          "mayonnaise"
+        ],
+        "actual_seed_oil_sources": [
+          "fries",
+          "mayonnaise",
+          "condiments",
+          "takeout",
+          "margarine"
+        ],
+        "estimated_hidden_seed_oils": 5,
+        "should_trigger_report": true,
+        "conversation_type": "positive_complete",
+        "conversation_flow_complexity": "simple",
+        "total_messages": 13,
+        "user_completion_signals": {
+          "explicit_completion": true,
+          "implicit_completion": false,
+          "last_user_message": "just a small bowl of vanilla greek yogurt with a drizzle of honey around 8 p.m. that\u2019s everything i ate today.",
+          "completion_detected": true
+        },
+        "timeline_coverage": {
+          "meal_coverage": {
+            "breakfast": true,
+            "lunch": true,
+            "dinner": true,
+            "snacks": true
+          },
+          "covered_meals_count": 4,
+          "covered_full_day": true,
+          "missing_meals": []
+        },
+        "user_explicitly_finished": true,
+        "evaluation_notes": "Generated conversation - metadata includes completion analysis"
+      },
+      "student_response": "{\n  \"message\": \"Great job sharing your day! I see a few seed-oil sources: the fries at lunch (peanut oil) and the mayonnaise in your tuna salad. Swapping mayo for avocado-based spread or olive-oil mayo, and baking potato wedges at home in olive oil can help cut back. Your breakfast and snacks were seed-oil-light!\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\"peanut oil\", \"Hellmann's mayonnaise\"],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"X.X g\",\n      \"dailyCalories\": \"XXXX kcal\",\n      \"laPercentageOfCalories\": \"X.X%\",\n      \"score\": \"Green|Yellow|Orange|Red\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your day included seed oils from fries and mayonnaise.\",\n    \"practicalTips\": [\"Swap mayo for avocado-based spread\", \"Bake potato wedges at home in olive oil\"],\n    \"conclusion\": \"Keep up the good work, small tweaks can make a big difference!\"\n  },\n  \"reportIsComplete\": false\n}",
+      "student_response_readable": "{\n  \"message\": \"Great job sharing your day! I see a few seed-oil sources: the fries at lunch (peanut oil) and the mayonnaise in your tuna salad. Swapping mayo for avocado-based spread or olive-oil mayo, and baking potato wedges at home in olive oil can help cut back. Your breakfast and snacks were seed-oil-light!\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"peanut oil\",\n    \"Hellmann's mayonnaise\"\n  ],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"X.X g\",\n      \"dailyCalories\": \"XXXX kcal\",\n      \"laPercentageOfCalories\": \"X.X%\",\n      \"score\": \"Green|Yellow|Orange|Red\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your day included seed oils from fries and mayonnaise.\",\n    \"practicalTips\": [\n      \"Swap mayo for avocado-based spread\",\n      \"Bake potato wedges at home in olive oil\"\n    ],\n    \"conclusion\": \"Keep up the good work, small tweaks can make a big difference!\"\n  },\n  \"reportIsComplete\": false\n}",
+      "evaluation_success": true
+    },
+    {
+      "conversation_id": "f9f1f6a7-0517-4a03-92f0-2f1096c58cea",
+      "evaluated_at": "2025-06-21T16:51:08.278170",
+      "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
+      "prompt_version": "v1.0",
+      "original_metadata": {
+        "conversation_id": "f9f1f6a7-0517-4a03-92f0-2f1096c58cea",
+        "generated_at": "2025-06-21T16:49:14.324574",
+        "difficulty_level": "moderate",
+        "user_cooperation_level": "detailed",
+        "conversation_completeness": "complete",
+        "expected_seed_oil_sources": [
+          "salad dressing",
+          "crackers",
+          "fried chicken"
+        ],
+        "actual_seed_oil_sources": [
+          "fries",
+          "crackers",
+          "fried chicken",
+          "salad dressing",
+          "takeout"
+        ],
+        "estimated_hidden_seed_oils": 5,
+        "should_trigger_report": true,
+        "conversation_type": "positive_complete",
+        "conversation_flow_complexity": "moderate",
+        "total_messages": 13,
+        "user_completion_signals": {
+          "explicit_completion": true,
+          "implicit_completion": false,
+          "last_user_message": "nope, that\u2019s everything i ate today.",
+          "completion_detected": true
+        },
+        "timeline_coverage": {
+          "meal_coverage": {
+            "breakfast": true,
+            "lunch": true,
+            "dinner": true,
+            "snacks": true
+          },
+          "covered_meals_count": 4,
+          "covered_full_day": true,
+          "missing_meals": []
+        },
+        "user_explicitly_finished": true,
+        "evaluation_notes": "Generated conversation - metadata includes completion analysis"
+      },
+      "student_response": "{\n  \"message\": \"Let's review your day and see where we can make some swaps to reduce industrial seed oils.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"store-bought ranch salad dressing\",\n    \"Wheat Thins crackers\",\n    \"fried chicken cooked in vegetable oil\"\n  ],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"X.X g\",\n      \"dailyCalories\": \"2000 kcal\",\n      \"laPercentageOfCalories\": \"X.X%\",\n      \"score\": \"\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your day included several likely sources of industrial seed oils: store-bought ranch dressing (probably soybean or canola oil), Wheat Thins crackers (likely canola and/or soybean oil), and fried chicken cooked in vegetable oil (a mix of oils).\",\n    \"practicalTips\": [\n      \"Consider making your own ranch dressing with olive or avocado oil.\",\n      \"Swap Wheat Thins for whole grain or seed-free crackers.\",\n      \"Opt for baked or air-fried chicken instead of deep-fried.\"\n    ],\n    \"conclusion\": \"You're aware of the main areas to tackle. Small swaps can make a difference.\"\n  },\n  \"reportIsComplete\": false\n}",
+      "student_response_readable": "{\n  \"message\": \"Let's review your day and see where we can make some swaps to reduce industrial seed oils.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"store-bought ranch salad dressing\",\n    \"Wheat Thins crackers\",\n    \"fried chicken cooked in vegetable oil\"\n  ],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"X.X g\",\n      \"dailyCalories\": \"2000 kcal\",\n      \"laPercentageOfCalories\": \"X.X%\",\n      \"score\": \"\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your day included several likely sources of industrial seed oils: store-bought ranch dressing (probably soybean or canola oil), Wheat Thins crackers (likely canola and/or soybean oil), and fried chicken cooked in vegetable oil (a mix of oils).\",\n    \"practicalTips\": [\n      \"Consider making your own ranch dressing with olive or avocado oil.\",\n      \"Swap Wheat Thins for whole grain or seed-free crackers.\",\n      \"Opt for baked or air-fried chicken instead of deep-fried.\"\n    ],\n    \"conclusion\": \"You're aware of the main areas to tackle. Small swaps can make a difference.\"\n  },\n  \"reportIsComplete\": false\n}",
+      "evaluation_success": true
+    },
+    {
+      "conversation_id": "93883e0f-7f85-4c6b-96e0-af52ef79291e",
+      "evaluated_at": "2025-06-21T16:51:08.557614",
+      "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
+      "prompt_version": "v1.0",
+      "original_metadata": {
+        "conversation_id": "93883e0f-7f85-4c6b-96e0-af52ef79291e",
+        "generated_at": "2025-06-21T16:49:26.836795",
+        "difficulty_level": "complex",
+        "user_cooperation_level": "evasive",
+        "conversation_completeness": "partial",
+        "expected_seed_oil_sources": [
+          "hidden restaurant oils",
+          "packaged snacks",
+          "condiments"
+        ],
+        "actual_seed_oil_sources": [
+          "fries",
+          "mayonnaise",
+          "fried chicken",
+          "takeout",
+          "margarine"
+        ],
+        "estimated_hidden_seed_oils": 5,
+        "should_trigger_report": false,
+        "conversation_type": "negative_incomplete",
+        "conversation_flow_complexity": "complex",
+        "total_messages": 14,
+        "user_completion_signals": {
+          "explicit_completion": false,
+          "implicit_completion": false,
+          "last_user_message": "i munched on a clif bar around 4 p.m. and some kettle corn while watching a show.",
+          "completion_detected": false
+        },
+        "timeline_coverage": {
+          "meal_coverage": {
+            "breakfast": true,
+            "lunch": true,
+            "dinner": true,
+            "snacks": true
+          },
+          "covered_meals_count": 4,
+          "covered_full_day": true,
+          "missing_meals": []
+        },
+        "user_explicitly_finished": false,
+        "evaluation_notes": "Generated conversation - metadata includes completion analysis"
+      },
+      "student_response": "{\n  \"message\": \"Clif Bars and kettle corn can contain seed oils. What type of cooking oil do you use at home for meal prep?\",\n  \"emotion\": \"Informative\",\n  \"possibleSeedOilSources\": [\"Clif Bar\", \"kettle corn\", \"soy sauce\", \"mayo\", \"Lay's\", \"stir-fry\"],\n  \"reportIsComplete\": false\n}",
+      "student_response_readable": "{\n  \"message\": \"Clif Bars and kettle corn can contain seed oils. What type of cooking oil do you use at home for meal prep?\",\n  \"emotion\": \"Informative\",\n  \"possibleSeedOilSources\": [\n    \"Clif Bar\",\n    \"kettle corn\",\n    \"soy sauce\",\n    \"mayo\",\n    \"Lay's\",\n    \"stir-fry\"\n  ],\n  \"reportIsComplete\": false\n}",
+      "evaluation_success": true
+    },
+    {
+      "conversation_id": "6dd27a95-201c-426d-9b90-2fb87f51e2e0",
+      "evaluated_at": "2025-06-21T16:51:08.833933",
+      "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
+      "prompt_version": "v1.0",
+      "original_metadata": {
+        "conversation_id": "6dd27a95-201c-426d-9b90-2fb87f51e2e0",
+        "generated_at": "2025-06-21T16:49:34.393987",
+        "difficulty_level": "simple",
+        "user_cooperation_level": "helpful",
+        "conversation_completeness": "partial",
+        "expected_seed_oil_sources": [
+          "chips",
+          "margarine"
+        ],
+        "actual_seed_oil_sources": [
+          "fries",
+          "chips",
+          "margarine"
+        ],
+        "estimated_hidden_seed_oils": 3,
+        "should_trigger_report": false,
+        "conversation_type": "negative_incomplete",
+        "conversation_flow_complexity": "simple",
+        "total_messages": 6,
+        "user_completion_signals": {
+          "explicit_completion": false,
+          "implicit_completion": false,
+          "last_user_message": "i haven\u2019t had dinner yet, but earlier this afternoon i snacked on a banana and a handful of almonds.",
+          "completion_detected": false
+        },
+        "timeline_coverage": {
+          "meal_coverage": {
+            "breakfast": true,
+            "lunch": true,
+            "dinner": true,
+            "snacks": true
+          },
+          "covered_meals_count": 4,
+          "covered_full_day": true,
+          "missing_meals": []
+        },
+        "user_explicitly_finished": false,
+        "evaluation_notes": "Generated conversation - metadata includes completion analysis"
+      },
+      "student_response": "{\n  \"message\": \"Great snack choice! The banana and almonds are seed-oil free. What about dinner plans - what's on the menu for tonight?\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\"margarine\", \"Lay's Classic potato chips\"],\n  \"reportIsComplete\": false\n}",
+      "student_response_readable": "{\n  \"message\": \"Great snack choice! The banana and almonds are seed-oil free. What about dinner plans - what's on the menu for tonight?\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"margarine\",\n    \"Lay's Classic potato chips\"\n  ],\n  \"reportIsComplete\": false\n}",
+      "evaluation_success": true
+    },
+    {
+      "conversation_id": "bd24b923-fc5b-4e40-af6b-2e8f82264208",
+      "evaluated_at": "2025-06-21T16:51:09.457839",
+      "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
+      "prompt_version": "v1.0",
+      "original_metadata": {
+        "conversation_id": "bd24b923-fc5b-4e40-af6b-2e8f82264208",
+        "generated_at": "2025-06-21T16:49:47.898230",
+        "difficulty_level": "moderate",
+        "user_cooperation_level": "evasive",
+        "conversation_completeness": "complete",
+        "expected_seed_oil_sources": [
+          "frozen meals",
+          "takeout",
+          "baked goods"
+        ],
+        "actual_seed_oil_sources": [
+          "fries",
+          "takeout",
+          "baked goods"
+        ],
+        "estimated_hidden_seed_oils": 3,
+        "should_trigger_report": true,
+        "conversation_type": "positive_complete",
+        "conversation_flow_complexity": "moderate",
+        "total_messages": 19,
+        "user_completion_signals": {
+          "explicit_completion": false,
+          "implicit_completion": false,
+          "last_user_message": "okay, a chocolate-chip muffin from the office caf\u00e9 around 3 p.m., and later a handful of almonds while watching tv. that\u2019s everything i ate yesterday.",
+          "completion_detected": false
+        },
+        "timeline_coverage": {
+          "meal_coverage": {
+            "breakfast": true,
+            "lunch": true,
+            "dinner": true,
+            "snacks": true
+          },
+          "covered_meals_count": 4,
+          "covered_full_day": true,
+          "missing_meals": []
+        },
+        "user_explicitly_finished": false,
+        "evaluation_notes": "Generated conversation - metadata includes completion analysis"
+      },
+      "student_response": "{\n  \"message\": \"You're doing great! I've got a good sense of your daily eats. Now, let's see where those seed oils might be hiding.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\"peanut butter\", \"Amy's Black Bean & Cheese frozen burrito\", \"Five Guys fries\", \"chocolate-chip muffin\"],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"still to be calculated\",\n      \"dailyCalories\": \"still to be calculated\",\n      \"laPercentageOfCalories\": \"still to be calculated\",\n      \"score\": \"still to be determined\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your report will be ready below!\",\n    \"practicalTips\": [\"consider swapping peanut butter with a natural alternative\", \"be mindful of processed foods like frozen burritos and muffins\"],\n    \"conclusion\": \"You're on the right track! Small tweaks can make a big difference.\"\n  },\n  \"reportIsComplete\": false\n}",
+      "student_response_readable": "{\n  \"message\": \"You're doing great! I've got a good sense of your daily eats. Now, let's see where those seed oils might be hiding.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"peanut butter\",\n    \"Amy's Black Bean & Cheese frozen burrito\",\n    \"Five Guys fries\",\n    \"chocolate-chip muffin\"\n  ],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"still to be calculated\",\n      \"dailyCalories\": \"still to be calculated\",\n      \"laPercentageOfCalories\": \"still to be calculated\",\n      \"score\": \"still to be determined\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your report will be ready below!\",\n    \"practicalTips\": [\n      \"consider swapping peanut butter with a natural alternative\",\n      \"be mindful of processed foods like frozen burritos and muffins\"\n    ],\n    \"conclusion\": \"You're on the right track! Small tweaks can make a big difference.\"\n  },\n  \"reportIsComplete\": false\n}",
+      "evaluation_success": true
+    },
+    {
+      "conversation_id": "2bd91c0f-ed09-4b1f-9482-86a1426675f6",
+      "evaluated_at": "2025-06-21T16:51:09.737031",
+      "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
+      "prompt_version": "v1.0",
+      "original_metadata": {
+        "conversation_id": "2bd91c0f-ed09-4b1f-9482-86a1426675f6",
+        "generated_at": "2025-06-21T16:50:09.106705",
+        "difficulty_level": "complex",
+        "user_cooperation_level": "detailed",
+        "conversation_completeness": "complete",
+        "expected_seed_oil_sources": [
+          "multiple restaurant meals",
+          "processed meats",
+          "energy bars"
+        ],
+        "actual_seed_oil_sources": [
+          "mayonnaise",
+          "chips",
+          "packaged snacks",
+          "takeout"
+        ],
+        "estimated_hidden_seed_oils": 4,
+        "should_trigger_report": true,
+        "conversation_type": "positive_complete",
+        "conversation_flow_complexity": "complex",
+        "total_messages": 12,
+        "user_completion_signals": {
+          "explicit_completion": true,
+          "implicit_completion": false,
+          "last_user_message": "nope, that\u2019s everything i ate today.",
+          "completion_detected": true
+        },
+        "timeline_coverage": {
+          "meal_coverage": {
+            "breakfast": true,
+            "lunch": true,
+            "dinner": true,
+            "snacks": true
+          },
+          "covered_meals_count": 4,
+          "covered_full_day": true,
+          "missing_meals": []
+        },
+        "user_explicitly_finished": true,
+        "evaluation_notes": "Generated conversation - metadata includes completion analysis"
+      },
+      "student_response": "{\n  \"message\": \"Got your daily food rundown. Now let's look at cooking oils and packaged foods\u2014what oils do you use at home for cooking?\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\"vegetable oil\", \"peanut oil\", \"soybean oil\"],\n  \"report\": {},\n  \"reportIsComplete\": false\n}",
+      "student_response_readable": "{\n  \"message\": \"Got your daily food rundown. Now let's look at cooking oils and packaged foods\\u2014what oils do you use at home for cooking?\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"vegetable oil\",\n    \"peanut oil\",\n    \"soybean oil\"\n  ],\n  \"report\": {},\n  \"reportIsComplete\": false\n}",
+      "evaluation_success": true
+    },
+    {
+      "conversation_id": "acb346e8-8e66-4f7a-abce-13b9dbfba7d4",
+      "evaluated_at": "2025-06-21T16:51:10.238030",
+      "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
+      "prompt_version": "v1.0",
+      "original_metadata": {
+        "conversation_id": "acb346e8-8e66-4f7a-abce-13b9dbfba7d4",
+        "generated_at": "2025-06-21T16:50:25.385932",
+        "difficulty_level": "simple",
+        "user_cooperation_level": "detailed",
+        "conversation_completeness": "partial",
+        "expected_seed_oil_sources": [
+          "sandwich spread",
+          "cereal"
+        ],
+        "actual_seed_oil_sources": [
+          "fries",
+          "mayonnaise",
+          "chips",
+          "margarine",
+          "granola"
+        ],
+        "estimated_hidden_seed_oils": 5,
+        "should_trigger_report": false,
+        "conversation_type": "negative_incomplete",
+        "conversation_flow_complexity": "simple",
+        "total_messages": 5,
+        "user_completion_signals": {
+          "explicit_completion": false,
+          "implicit_completion": false,
+          "last_user_message": "lunch was pretty simple: a turkey sandwich on whole-wheat bread. i spread about a tablespoon of hellmann\u2019s light mayo (their \u201csandwich spread\u201d) on each slice, added deli turkey, a slice of provolone, tomato, and some romaine. on the side i munched a handful of baby carrots and a small bag of lay\u2019s baked chips.",
+          "completion_detected": false
+        },
+        "timeline_coverage": {
+          "meal_coverage": {
+            "breakfast": true,
+            "lunch": true,
+            "dinner": true,
+            "snacks": true
+          },
+          "covered_meals_count": 4,
+          "covered_full_day": true,
+          "missing_meals": []
+        },
+        "user_explicitly_finished": false,
+        "evaluation_notes": "Generated conversation - metadata includes completion analysis"
+      },
+      "student_response": "{\n  \"message\": \"So far, we've identified a few potential seed oil sources in your diet: Special K cereal, unsweetened almond milk, Hellmann's light mayo, and Lay's baked chips. Let's keep exploring to get a clearer picture. What did you have for an afternoon snack or beverage?\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\"Special K cereal\", \"almond milk\", \"Hellmann's light mayo\", \"Lay's baked chips\"],\n  \"report\": {\n    \"scores\": {},\n    \"summary\": \"\",\n    \"practicalTips\": [],\n    \"conclusion\": \"\"\n  },\n  \"reportIsComplete\": false\n}",
+      "student_response_readable": "{\n  \"message\": \"So far, we've identified a few potential seed oil sources in your diet: Special K cereal, unsweetened almond milk, Hellmann's light mayo, and Lay's baked chips. Let's keep exploring to get a clearer picture. What did you have for an afternoon snack or beverage?\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"Special K cereal\",\n    \"almond milk\",\n    \"Hellmann's light mayo\",\n    \"Lay's baked chips\"\n  ],\n  \"report\": {\n    \"scores\": {},\n    \"summary\": \"\",\n    \"practicalTips\": [],\n    \"conclusion\": \"\"\n  },\n  \"reportIsComplete\": false\n}",
+      "evaluation_success": true
+    },
+    {
+      "conversation_id": "0dfceacf-ed75-4e88-bb52-2dc7b70c6f89",
+      "evaluated_at": "2025-06-21T16:51:10.566272",
+      "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
+      "prompt_version": "v1.0",
+      "original_metadata": {
+        "conversation_id": "0dfceacf-ed75-4e88-bb52-2dc7b70c6f89",
+        "generated_at": "2025-06-21T16:50:33.886399",
+        "difficulty_level": "moderate",
+        "user_cooperation_level": "helpful",
+        "conversation_completeness": "complete",
+        "expected_seed_oil_sources": [
+          "coffee creamer",
+          "granola",
+          "soup"
+        ],
+        "actual_seed_oil_sources": [
+          "fries",
+          "packaged snacks",
+          "coffee creamer",
+          "granola",
+          "protein bars"
+        ],
+        "estimated_hidden_seed_oils": 5,
+        "should_trigger_report": true,
+        "conversation_type": "positive_complete",
+        "conversation_flow_complexity": "moderate",
+        "total_messages": 10,
+        "user_completion_signals": {
+          "explicit_completion": true,
+          "implicit_completion": false,
+          "last_user_message": "nope, that's everything i ate today.",
+          "completion_detected": true
+        },
+        "timeline_coverage": {
+          "meal_coverage": {
+            "breakfast": true,
+            "lunch": true,
+            "dinner": true,
+            "snacks": true
+          },
+          "covered_meals_count": 4,
+          "covered_full_day": true,
+          "missing_meals": []
+        },
+        "user_explicitly_finished": true,
+        "evaluation_notes": "Generated conversation - metadata includes completion analysis"
+      },
+      "student_response": "{\n  \"message\": \"Got it! Now, let's discuss cooking oils and packaged foods. What oils do you use for cooking at home besides butter and avocado oil?\",\n  \"emotion\": \"Informative\",\n  \"possibleSeedOilSources\": [\"Coffee-mate creamer\", \"Nature Valley Oats & Honey granola\", \"Campbell\u2019s Chunky Chicken Noodle Soup\", \"Clif Chocolate Chip protein bar\"],\n  \"reportIsComplete\": false\n}",
+      "student_response_readable": "{\n  \"message\": \"Got it! Now, let's discuss cooking oils and packaged foods. What oils do you use for cooking at home besides butter and avocado oil?\",\n  \"emotion\": \"Informative\",\n  \"possibleSeedOilSources\": [\n    \"Coffee-mate creamer\",\n    \"Nature Valley Oats & Honey granola\",\n    \"Campbell\\u2019s Chunky Chicken Noodle Soup\",\n    \"Clif Chocolate Chip protein bar\"\n  ],\n  \"reportIsComplete\": false\n}",
+      "evaluation_success": true
+    },
+    {
+      "conversation_id": "3d0a2880-a5e2-413b-af79-6076fa38ec9a",
+      "evaluated_at": "2025-06-21T16:51:10.843804",
+      "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
+      "prompt_version": "v1.0",
+      "original_metadata": {
+        "conversation_id": "3d0a2880-a5e2-413b-af79-6076fa38ec9a",
+        "generated_at": "2025-06-21T16:50:48.066383",
+        "difficulty_level": "complex",
+        "user_cooperation_level": "evasive",
+        "conversation_completeness": "partial",
+        "expected_seed_oil_sources": [
+          "fast food",
+          "vending machine snacks",
+          "meal replacement"
+        ],
+        "actual_seed_oil_sources": [
+          "fries",
+          "chips",
+          "fried chicken",
+          "salad dressing",
+          "takeout",
+          "baked goods",
+          "meal replacement"
+        ],
+        "estimated_hidden_seed_oils": 7,
+        "should_trigger_report": false,
+        "conversation_type": "negative_incomplete",
+        "conversation_flow_complexity": "complex",
+        "total_messages": 14,
+        "user_completion_signals": {
+          "explicit_completion": false,
+          "implicit_completion": false,
+          "last_user_message": "not that i can remember right now.",
+          "completion_detected": false
+        },
+        "timeline_coverage": {
+          "meal_coverage": {
+            "breakfast": true,
+            "lunch": true,
+            "dinner": true,
+            "snacks": true
+          },
+          "covered_meals_count": 4,
+          "covered_full_day": true,
+          "missing_meals": []
+        },
+        "user_explicitly_finished": false,
+        "evaluation_notes": "Generated conversation - metadata includes completion analysis"
+      },
+      "student_response": "{\n  \"message\": \"Great start! Let's review what we have so far and then explore cooking oils and packaged foods.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\"FuelFast400\", \"Burger Queen double cheeseburger\", \"fries\", \"cola\", \"rotisserie chicken\", \"nacho cheese chips\"],\n  \"reportIsComplete\": false\n}",
+      "student_response_readable": "{\n  \"message\": \"Great start! Let's review what we have so far and then explore cooking oils and packaged foods.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"FuelFast400\",\n    \"Burger Queen double cheeseburger\",\n    \"fries\",\n    \"cola\",\n    \"rotisserie chicken\",\n    \"nacho cheese chips\"\n  ],\n  \"reportIsComplete\": false\n}",
+      "evaluation_success": true
+    },
+    {
+      "conversation_id": "96116477-3ca2-4606-8396-d7170a7f83a7",
+      "evaluated_at": "2025-06-21T16:51:11.456020",
+      "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
+      "prompt_version": "v1.0",
+      "original_metadata": {
+        "conversation_id": "96116477-3ca2-4606-8396-d7170a7f83a7",
+        "generated_at": "2025-06-21T16:51:06.784907",
+        "difficulty_level": "moderate",
+        "user_cooperation_level": "detailed",
+        "conversation_completeness": "complete",
+        "expected_seed_oil_sources": [
+          "pasta sauce",
+          "nuts",
+          "protein bars"
+        ],
+        "actual_seed_oil_sources": [
+          "fries",
+          "mayonnaise",
+          "chips",
+          "packaged snacks",
+          "pasta sauce",
+          "protein bars"
+        ],
+        "estimated_hidden_seed_oils": 6,
+        "should_trigger_report": true,
+        "conversation_type": "positive_complete",
+        "conversation_flow_complexity": "moderate",
+        "total_messages": 9,
+        "user_completion_signals": {
+          "explicit_completion": true,
+          "implicit_completion": false,
+          "last_user_message": "dinner was pretty simple: about two cups of barilla spaghetti topped with roughly half a cup of classico tomato & basil pasta sauce straight from the jar. i sprinkled on some grated parmesan and had a side salad (mixed greens, cherry tomatoes, and cucumbers) dressed with olive oil and balsamic vinegar. that\u2019s everything i ate today.",
+          "completion_detected": true
+        },
+        "timeline_coverage": {
+          "meal_coverage": {
+            "breakfast": true,
+            "lunch": true,
+            "dinner": true,
+            "snacks": true
+          },
+          "covered_meals_count": 4,
+          "covered_full_day": true,
+          "missing_meals": []
+        },
+        "user_explicitly_finished": true,
+        "evaluation_notes": "Generated conversation - metadata includes completion analysis"
+      },
+      "student_response": "{\n  \"message\": \"Great job detailing your day! I've identified some potential seed oil sources: your roasted almonds, KIND protein bar, and Classico pasta sauce. Swapping these out could help lower your intake.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"roasted almonds\",\n    \"KIND protein bar\",\n    \"Classico Tomato & Basil pasta sauce\"\n  ],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"X.X g\",\n      \"dailyCalories\": \"XXXX kcal\",\n      \"laPercentageOfCalories\": \"X.X%\",\n      \"score\": \"Green|Yellow|Orange|Red\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your report will be ready after we review a few more details.\",\n    \"practicalTips\": [\n      \"Choose dry-roasted almonds without added oil\",\n      \"Opt for protein bars without seed oils\",\n      \"Select pasta sauces made with olive oil\"\n    ],\n    \"conclusion\": \"You're on the right track! Small tweaks can make a big difference.\"\n  },\n  \"reportIsComplete\": false\n}",
+      "student_response_readable": "{\n  \"message\": \"Great job detailing your day! I've identified some potential seed oil sources: your roasted almonds, KIND protein bar, and Classico pasta sauce. Swapping these out could help lower your intake.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"roasted almonds\",\n    \"KIND protein bar\",\n    \"Classico Tomato & Basil pasta sauce\"\n  ],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"X.X g\",\n      \"dailyCalories\": \"XXXX kcal\",\n      \"laPercentageOfCalories\": \"X.X%\",\n      \"score\": \"Green|Yellow|Orange|Red\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your report will be ready after we review a few more details.\",\n    \"practicalTips\": [\n      \"Choose dry-roasted almonds without added oil\",\n      \"Opt for protein bars without seed oils\",\n      \"Select pasta sauces made with olive oil\"\n    ],\n    \"conclusion\": \"You're on the right track! Small tweaks can make a big difference.\"\n  },\n  \"reportIsComplete\": false\n}",
+      "evaluation_success": true
+    }
+  ]
+}

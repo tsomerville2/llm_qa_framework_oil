@@ -1,0 +1,51 @@
+{
+  "conversation_id": "2bd91c0f-ed09-4b1f-9482-86a1426675f6",
+  "evaluated_at": "2025-06-21T16:51:09.737031",
+  "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
+  "prompt_version": "v1.0",
+  "original_metadata": {
+    "conversation_id": "2bd91c0f-ed09-4b1f-9482-86a1426675f6",
+    "generated_at": "2025-06-21T16:50:09.106705",
+    "difficulty_level": "complex",
+    "user_cooperation_level": "detailed",
+    "conversation_completeness": "complete",
+    "expected_seed_oil_sources": [
+      "multiple restaurant meals",
+      "processed meats",
+      "energy bars"
+    ],
+    "actual_seed_oil_sources": [
+      "mayonnaise",
+      "chips",
+      "packaged snacks",
+      "takeout"
+    ],
+    "estimated_hidden_seed_oils": 4,
+    "should_trigger_report": true,
+    "conversation_type": "positive_complete",
+    "conversation_flow_complexity": "complex",
+    "total_messages": 12,
+    "user_completion_signals": {
+      "explicit_completion": true,
+      "implicit_completion": false,
+      "last_user_message": "nope, that\u2019s everything i ate today.",
+      "completion_detected": true
+    },
+    "timeline_coverage": {
+      "meal_coverage": {
+        "breakfast": true,
+        "lunch": true,
+        "dinner": true,
+        "snacks": true
+      },
+      "covered_meals_count": 4,
+      "covered_full_day": true,
+      "missing_meals": []
+    },
+    "user_explicitly_finished": true,
+    "evaluation_notes": "Generated conversation - metadata includes completion analysis"
+  },
+  "student_response": "{\n  \"message\": \"Got your daily food rundown. Now let's look at cooking oils and packaged foods\u2014what oils do you use at home for cooking?\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\"vegetable oil\", \"peanut oil\", \"soybean oil\"],\n  \"report\": {},\n  \"reportIsComplete\": false\n}",
+  "student_response_readable": "{\n  \"message\": \"Got your daily food rundown. Now let's look at cooking oils and packaged foods\\u2014what oils do you use at home for cooking?\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"vegetable oil\",\n    \"peanut oil\",\n    \"soybean oil\"\n  ],\n  \"report\": {},\n  \"reportIsComplete\": false\n}",
+  "evaluation_success": true
+}

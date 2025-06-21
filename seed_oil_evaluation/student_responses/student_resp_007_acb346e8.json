@@ -1,0 +1,51 @@
+{
+  "conversation_id": "acb346e8-8e66-4f7a-abce-13b9dbfba7d4",
+  "evaluated_at": "2025-06-21T16:51:10.238030",
+  "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
+  "prompt_version": "v1.0",
+  "original_metadata": {
+    "conversation_id": "acb346e8-8e66-4f7a-abce-13b9dbfba7d4",
+    "generated_at": "2025-06-21T16:50:25.385932",
+    "difficulty_level": "simple",
+    "user_cooperation_level": "detailed",
+    "conversation_completeness": "partial",
+    "expected_seed_oil_sources": [
+      "sandwich spread",
+      "cereal"
+    ],
+    "actual_seed_oil_sources": [
+      "fries",
+      "mayonnaise",
+      "chips",
+      "margarine",
+      "granola"
+    ],
+    "estimated_hidden_seed_oils": 5,
+    "should_trigger_report": false,
+    "conversation_type": "negative_incomplete",
+    "conversation_flow_complexity": "simple",
+    "total_messages": 5,
+    "user_completion_signals": {
+      "explicit_completion": false,
+      "implicit_completion": false,
+      "last_user_message": "lunch was pretty simple: a turkey sandwich on whole-wheat bread. i spread about a tablespoon of hellmann\u2019s light mayo (their \u201csandwich spread\u201d) on each slice, added deli turkey, a slice of provolone, tomato, and some romaine. on the side i munched a handful of baby carrots and a small bag of lay\u2019s baked chips.",
+      "completion_detected": false
+    },
+    "timeline_coverage": {
+      "meal_coverage": {
+        "breakfast": true,
+        "lunch": true,
+        "dinner": true,
+        "snacks": true
+      },
+      "covered_meals_count": 4,
+      "covered_full_day": true,
+      "missing_meals": []
+    },
+    "user_explicitly_finished": false,
+    "evaluation_notes": "Generated conversation - metadata includes completion analysis"
+  },
+  "student_response": "{\n  \"message\": \"So far, we've identified a few potential seed oil sources in your diet: Special K cereal, unsweetened almond milk, Hellmann's light mayo, and Lay's baked chips. Let's keep exploring to get a clearer picture. What did you have for an afternoon snack or beverage?\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\"Special K cereal\", \"almond milk\", \"Hellmann's light mayo\", \"Lay's baked chips\"],\n  \"report\": {\n    \"scores\": {},\n    \"summary\": \"\",\n    \"practicalTips\": [],\n    \"conclusion\": \"\"\n  },\n  \"reportIsComplete\": false\n}",
+  "student_response_readable": "{\n  \"message\": \"So far, we've identified a few potential seed oil sources in your diet: Special K cereal, unsweetened almond milk, Hellmann's light mayo, and Lay's baked chips. Let's keep exploring to get a clearer picture. What did you have for an afternoon snack or beverage?\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"Special K cereal\",\n    \"almond milk\",\n    \"Hellmann's light mayo\",\n    \"Lay's baked chips\"\n  ],\n  \"report\": {\n    \"scores\": {},\n    \"summary\": \"\",\n    \"practicalTips\": [],\n    \"conclusion\": \"\"\n  },\n  \"reportIsComplete\": false\n}",
+  "evaluation_success": true
+}

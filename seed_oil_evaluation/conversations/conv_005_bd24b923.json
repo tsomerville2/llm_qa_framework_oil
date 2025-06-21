@@ -1,0 +1,123 @@
+{
+  "metadata": {
+    "conversation_id": "bd24b923-fc5b-4e40-af6b-2e8f82264208",
+    "generated_at": "2025-06-21T16:49:47.898230",
+    "difficulty_level": "moderate",
+    "user_cooperation_level": "evasive",
+    "conversation_completeness": "complete",
+    "expected_seed_oil_sources": [
+      "frozen meals",
+      "takeout",
+      "baked goods"
+    ],
+    "actual_seed_oil_sources": [
+      "fries",
+      "takeout",
+      "baked goods"
+    ],
+    "estimated_hidden_seed_oils": 3,
+    "should_trigger_report": true,
+    "conversation_type": "positive_complete",
+    "conversation_flow_complexity": "moderate",
+    "total_messages": 19,
+    "user_completion_signals": {
+      "explicit_completion": false,
+      "implicit_completion": false,
+      "last_user_message": "okay, a chocolate-chip muffin from the office caf\u00e9 around 3 p.m., and later a handful of almonds while watching tv. that\u2019s everything i ate yesterday.",
+      "completion_detected": false
+    },
+    "timeline_coverage": {
+      "meal_coverage": {
+        "breakfast": true,
+        "lunch": true,
+        "dinner": true,
+        "snacks": true
+      },
+      "covered_meals_count": 4,
+      "covered_full_day": true,
+      "missing_meals": []
+    },
+    "user_explicitly_finished": false,
+    "evaluation_notes": "Generated conversation - metadata includes completion analysis"
+  },
+  "conversation": {
+    "messages": [
+      {
+        "role": "assistant",
+        "content": "Hi there! I'm The Seed Oil Sleuth. I help people track down where seed oils might be hiding in their everyday meals. Mind if we walk through what you ate yesterday, starting with breakfast?"
+      },
+      {
+        "role": "user",
+        "content": "Uh, sure, I guess."
+      },
+      {
+        "role": "assistant",
+        "content": "Great! What did breakfast look like?"
+      },
+      {
+        "role": "user",
+        "content": "Just coffee and something small."
+      },
+      {
+        "role": "assistant",
+        "content": "No problem\u2014could you share the \"something small\"? Even little details help me spot hidden oils."
+      },
+      {
+        "role": "user",
+        "content": "Fine. Two slices of whole-wheat toast with peanut butter and a banana."
+      },
+      {
+        "role": "assistant",
+        "content": "Got it. Thanks! How about lunch\u2014what did you have?"
+      },
+      {
+        "role": "user",
+        "content": "Nothing special, just heated something up."
+      },
+      {
+        "role": "assistant",
+        "content": "Was it leftovers, a microwave meal, or something else?"
+      },
+      {
+        "role": "user",
+        "content": "Alright, it was one of those Amy\u2019s Black Bean & Cheese frozen burritos. I nuked it in the microwave."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for clarifying. Moving on to dinner\u2014what did you grab?"
+      },
+      {
+        "role": "user",
+        "content": "Picked something up on the way home."
+      },
+      {
+        "role": "assistant",
+        "content": "Takeout, I\u2019m guessing? Any chance you remember what and where it was from?"
+      },
+      {
+        "role": "user",
+        "content": "Yeah, a cheeseburger and fries from Five Guys."
+      },
+      {
+        "role": "assistant",
+        "content": "Appreciate the detail. Lastly, did you have any snacks or desserts during the day or evening?"
+      },
+      {
+        "role": "user",
+        "content": "A couple things."
+      },
+      {
+        "role": "assistant",
+        "content": "Could you list them? Even quick bites count."
+      },
+      {
+        "role": "user",
+        "content": "Okay, a chocolate-chip muffin from the office caf\u00e9 around 3 p.m., and later a handful of almonds while watching TV. That\u2019s everything I ate yesterday."
+      },
+      {
+        "role": "assistant",
+        "content": "Perfect, thanks for sharing! I have a clear picture now to point out where seed oils might be sneaking in."
+      }
+    ]
+  }
+}

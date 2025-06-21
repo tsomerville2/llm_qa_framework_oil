@@ -1,0 +1,26 @@
+# Student LLM Choices
+# Format: provider:model_name
+# Edit this file to add/remove models or change names
+
+# Temporarily reduced for demo - uncomment others as needed
+groq:meta-llama/llama-4-scout-17b-16e-instruct
+openai:gpt-4o
+
+groq:meta-llama/llama-4-maverick-17b-128e-instruct
+groq:qwen/qwen3-32b
+openai:gpt-4.1
+openai:gpt-4.1-mini
+openai:gpt-4.1-nano
+openai:o3-mini
+openai:o3-pro
+openai:gpt-4o-mini
+groq:compound-beta
+groq:compound-beta-mini
+groq:deepseek-r1-distill-llama-70b
+groq:gemma2-9b-it
+groq:llama-3.1-8b-instant
+groq:llama-3.3-70b-versatile
+groq:llama3-70b-8192
+#groq:llama3-8b-8192
+
+

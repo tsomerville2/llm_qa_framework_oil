@@ -1,0 +1,66 @@
+{
+  "generated_at": "2025-06-21T16:51:06.786399",
+  "total_conversations": 10,
+  "conversations": [
+    {
+      "file": "conv_001_72624c49.json",
+      "id": "72624c49-2ebf-479e-99a4-34742cdd2702",
+      "difficulty": "simple",
+      "completeness": "complete"
+    },
+    {
+      "file": "conv_002_f9f1f6a7.json",
+      "id": "f9f1f6a7-0517-4a03-92f0-2f1096c58cea",
+      "difficulty": "moderate",
+      "completeness": "complete"
+    },
+    {
+      "file": "conv_003_93883e0f.json",
+      "id": "93883e0f-7f85-4c6b-96e0-af52ef79291e",
+      "difficulty": "complex",
+      "completeness": "partial"
+    },
+    {
+      "file": "conv_004_6dd27a95.json",
+      "id": "6dd27a95-201c-426d-9b90-2fb87f51e2e0",
+      "difficulty": "simple",
+      "completeness": "partial"
+    },
+    {
+      "file": "conv_005_bd24b923.json",
+      "id": "bd24b923-fc5b-4e40-af6b-2e8f82264208",
+      "difficulty": "moderate",
+      "completeness": "complete"
+    },
+    {
+      "file": "conv_006_2bd91c0f.json",
+      "id": "2bd91c0f-ed09-4b1f-9482-86a1426675f6",
+      "difficulty": "complex",
+      "completeness": "complete"
+    },
+    {
+      "file": "conv_007_acb346e8.json",
+      "id": "acb346e8-8e66-4f7a-abce-13b9dbfba7d4",
+      "difficulty": "simple",
+      "completeness": "partial"
+    },
+    {
+      "file": "conv_008_0dfceacf.json",
+      "id": "0dfceacf-ed75-4e88-bb52-2dc7b70c6f89",
+      "difficulty": "moderate",
+      "completeness": "complete"
+    },
+    {
+      "file": "conv_009_3d0a2880.json",
+      "id": "3d0a2880-a5e2-413b-af79-6076fa38ec9a",
+      "difficulty": "complex",
+      "completeness": "partial"
+    },
+    {
+      "file": "conv_010_96116477.json",
+      "id": "96116477-3ca2-4606-8396-d7170a7f83a7",
+      "difficulty": "moderate",
+      "completeness": "complete"
+    }
+  ]
+}

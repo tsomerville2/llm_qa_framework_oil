@@ -1,0 +1,52 @@
+{
+  "conversation_id": "93883e0f-7f85-4c6b-96e0-af52ef79291e",
+  "evaluated_at": "2025-06-21T16:51:08.557614",
+  "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
+  "prompt_version": "v1.0",
+  "original_metadata": {
+    "conversation_id": "93883e0f-7f85-4c6b-96e0-af52ef79291e",
+    "generated_at": "2025-06-21T16:49:26.836795",
+    "difficulty_level": "complex",
+    "user_cooperation_level": "evasive",
+    "conversation_completeness": "partial",
+    "expected_seed_oil_sources": [
+      "hidden restaurant oils",
+      "packaged snacks",
+      "condiments"
+    ],
+    "actual_seed_oil_sources": [
+      "fries",
+      "mayonnaise",
+      "fried chicken",
+      "takeout",
+      "margarine"
+    ],
+    "estimated_hidden_seed_oils": 5,
+    "should_trigger_report": false,
+    "conversation_type": "negative_incomplete",
+    "conversation_flow_complexity": "complex",
+    "total_messages": 14,
+    "user_completion_signals": {
+      "explicit_completion": false,
+      "implicit_completion": false,
+      "last_user_message": "i munched on a clif bar around 4 p.m. and some kettle corn while watching a show.",
+      "completion_detected": false
+    },
+    "timeline_coverage": {
+      "meal_coverage": {
+        "breakfast": true,
+        "lunch": true,
+        "dinner": true,
+        "snacks": true
+      },
+      "covered_meals_count": 4,
+      "covered_full_day": true,
+      "missing_meals": []
+    },
+    "user_explicitly_finished": false,
+    "evaluation_notes": "Generated conversation - metadata includes completion analysis"
+  },
+  "student_response": "{\n  \"message\": \"Clif Bars and kettle corn can contain seed oils. What type of cooking oil do you use at home for meal prep?\",\n  \"emotion\": \"Informative\",\n  \"possibleSeedOilSources\": [\"Clif Bar\", \"kettle corn\", \"soy sauce\", \"mayo\", \"Lay's\", \"stir-fry\"],\n  \"reportIsComplete\": false\n}",
+  "student_response_readable": "{\n  \"message\": \"Clif Bars and kettle corn can contain seed oils. What type of cooking oil do you use at home for meal prep?\",\n  \"emotion\": \"Informative\",\n  \"possibleSeedOilSources\": [\n    \"Clif Bar\",\n    \"kettle corn\",\n    \"soy sauce\",\n    \"mayo\",\n    \"Lay's\",\n    \"stir-fry\"\n  ],\n  \"reportIsComplete\": false\n}",
+  "evaluation_success": true
+}

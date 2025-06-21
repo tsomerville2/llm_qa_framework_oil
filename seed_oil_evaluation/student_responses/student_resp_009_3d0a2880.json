@@ -1,0 +1,54 @@
+{
+  "conversation_id": "3d0a2880-a5e2-413b-af79-6076fa38ec9a",
+  "evaluated_at": "2025-06-21T16:51:10.843804",
+  "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
+  "prompt_version": "v1.0",
+  "original_metadata": {
+    "conversation_id": "3d0a2880-a5e2-413b-af79-6076fa38ec9a",
+    "generated_at": "2025-06-21T16:50:48.066383",
+    "difficulty_level": "complex",
+    "user_cooperation_level": "evasive",
+    "conversation_completeness": "partial",
+    "expected_seed_oil_sources": [
+      "fast food",
+      "vending machine snacks",
+      "meal replacement"
+    ],
+    "actual_seed_oil_sources": [
+      "fries",
+      "chips",
+      "fried chicken",
+      "salad dressing",
+      "takeout",
+      "baked goods",
+      "meal replacement"
+    ],
+    "estimated_hidden_seed_oils": 7,
+    "should_trigger_report": false,
+    "conversation_type": "negative_incomplete",
+    "conversation_flow_complexity": "complex",
+    "total_messages": 14,
+    "user_completion_signals": {
+      "explicit_completion": false,
+      "implicit_completion": false,
+      "last_user_message": "not that i can remember right now.",
+      "completion_detected": false
+    },
+    "timeline_coverage": {
+      "meal_coverage": {
+        "breakfast": true,
+        "lunch": true,
+        "dinner": true,
+        "snacks": true
+      },
+      "covered_meals_count": 4,
+      "covered_full_day": true,
+      "missing_meals": []
+    },
+    "user_explicitly_finished": false,
+    "evaluation_notes": "Generated conversation - metadata includes completion analysis"
+  },
+  "student_response": "{\n  \"message\": \"Great start! Let's review what we have so far and then explore cooking oils and packaged foods.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\"FuelFast400\", \"Burger Queen double cheeseburger\", \"fries\", \"cola\", \"rotisserie chicken\", \"nacho cheese chips\"],\n  \"reportIsComplete\": false\n}",
+  "student_response_readable": "{\n  \"message\": \"Great start! Let's review what we have so far and then explore cooking oils and packaged foods.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"FuelFast400\",\n    \"Burger Queen double cheeseburger\",\n    \"fries\",\n    \"cola\",\n    \"rotisserie chicken\",\n    \"nacho cheese chips\"\n  ],\n  \"reportIsComplete\": false\n}",
+  "evaluation_success": true
+}

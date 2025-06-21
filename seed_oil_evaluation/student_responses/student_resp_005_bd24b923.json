@@ -1,0 +1,50 @@
+{
+  "conversation_id": "bd24b923-fc5b-4e40-af6b-2e8f82264208",
+  "evaluated_at": "2025-06-21T16:51:09.457839",
+  "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
+  "prompt_version": "v1.0",
+  "original_metadata": {
+    "conversation_id": "bd24b923-fc5b-4e40-af6b-2e8f82264208",
+    "generated_at": "2025-06-21T16:49:47.898230",
+    "difficulty_level": "moderate",
+    "user_cooperation_level": "evasive",
+    "conversation_completeness": "complete",
+    "expected_seed_oil_sources": [
+      "frozen meals",
+      "takeout",
+      "baked goods"
+    ],
+    "actual_seed_oil_sources": [
+      "fries",
+      "takeout",
+      "baked goods"
+    ],
+    "estimated_hidden_seed_oils": 3,
+    "should_trigger_report": true,
+    "conversation_type": "positive_complete",
+    "conversation_flow_complexity": "moderate",
+    "total_messages": 19,
+    "user_completion_signals": {
+      "explicit_completion": false,
+      "implicit_completion": false,
+      "last_user_message": "okay, a chocolate-chip muffin from the office caf\u00e9 around 3 p.m., and later a handful of almonds while watching tv. that\u2019s everything i ate yesterday.",
+      "completion_detected": false
+    },
+    "timeline_coverage": {
+      "meal_coverage": {
+        "breakfast": true,
+        "lunch": true,
+        "dinner": true,
+        "snacks": true
+      },
+      "covered_meals_count": 4,
+      "covered_full_day": true,
+      "missing_meals": []
+    },
+    "user_explicitly_finished": false,
+    "evaluation_notes": "Generated conversation - metadata includes completion analysis"
+  },
+  "student_response": "{\n  \"message\": \"You're doing great! I've got a good sense of your daily eats. Now, let's see where those seed oils might be hiding.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\"peanut butter\", \"Amy's Black Bean & Cheese frozen burrito\", \"Five Guys fries\", \"chocolate-chip muffin\"],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"still to be calculated\",\n      \"dailyCalories\": \"still to be calculated\",\n      \"laPercentageOfCalories\": \"still to be calculated\",\n      \"score\": \"still to be determined\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your report will be ready below!\",\n    \"practicalTips\": [\"consider swapping peanut butter with a natural alternative\", \"be mindful of processed foods like frozen burritos and muffins\"],\n    \"conclusion\": \"You're on the right track! Small tweaks can make a big difference.\"\n  },\n  \"reportIsComplete\": false\n}",
+  "student_response_readable": "{\n  \"message\": \"You're doing great! I've got a good sense of your daily eats. Now, let's see where those seed oils might be hiding.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"peanut butter\",\n    \"Amy's Black Bean & Cheese frozen burrito\",\n    \"Five Guys fries\",\n    \"chocolate-chip muffin\"\n  ],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"still to be calculated\",\n      \"dailyCalories\": \"still to be calculated\",\n      \"laPercentageOfCalories\": \"still to be calculated\",\n      \"score\": \"still to be determined\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your report will be ready below!\",\n    \"practicalTips\": [\n      \"consider swapping peanut butter with a natural alternative\",\n      \"be mindful of processed foods like frozen burritos and muffins\"\n    ],\n    \"conclusion\": \"You're on the right track! Small tweaks can make a big difference.\"\n  },\n  \"reportIsComplete\": false\n}",
+  "evaluation_success": true
+}

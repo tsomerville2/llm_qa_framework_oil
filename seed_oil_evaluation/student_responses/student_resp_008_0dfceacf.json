@@ -1,0 +1,52 @@
+{
+  "conversation_id": "0dfceacf-ed75-4e88-bb52-2dc7b70c6f89",
+  "evaluated_at": "2025-06-21T16:51:10.566272",
+  "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
+  "prompt_version": "v1.0",
+  "original_metadata": {
+    "conversation_id": "0dfceacf-ed75-4e88-bb52-2dc7b70c6f89",
+    "generated_at": "2025-06-21T16:50:33.886399",
+    "difficulty_level": "moderate",
+    "user_cooperation_level": "helpful",
+    "conversation_completeness": "complete",
+    "expected_seed_oil_sources": [
+      "coffee creamer",
+      "granola",
+      "soup"
+    ],
+    "actual_seed_oil_sources": [
+      "fries",
+      "packaged snacks",
+      "coffee creamer",
+      "granola",
+      "protein bars"
+    ],
+    "estimated_hidden_seed_oils": 5,
+    "should_trigger_report": true,
+    "conversation_type": "positive_complete",
+    "conversation_flow_complexity": "moderate",
+    "total_messages": 10,
+    "user_completion_signals": {
+      "explicit_completion": true,
+      "implicit_completion": false,
+      "last_user_message": "nope, that's everything i ate today.",
+      "completion_detected": true
+    },
+    "timeline_coverage": {
+      "meal_coverage": {
+        "breakfast": true,
+        "lunch": true,
+        "dinner": true,
+        "snacks": true
+      },
+      "covered_meals_count": 4,
+      "covered_full_day": true,
+      "missing_meals": []
+    },
+    "user_explicitly_finished": true,
+    "evaluation_notes": "Generated conversation - metadata includes completion analysis"
+  },
+  "student_response": "{\n  \"message\": \"Got it! Now, let's discuss cooking oils and packaged foods. What oils do you use for cooking at home besides butter and avocado oil?\",\n  \"emotion\": \"Informative\",\n  \"possibleSeedOilSources\": [\"Coffee-mate creamer\", \"Nature Valley Oats & Honey granola\", \"Campbell\u2019s Chunky Chicken Noodle Soup\", \"Clif Chocolate Chip protein bar\"],\n  \"reportIsComplete\": false\n}",
+  "student_response_readable": "{\n  \"message\": \"Got it! Now, let's discuss cooking oils and packaged foods. What oils do you use for cooking at home besides butter and avocado oil?\",\n  \"emotion\": \"Informative\",\n  \"possibleSeedOilSources\": [\n    \"Coffee-mate creamer\",\n    \"Nature Valley Oats & Honey granola\",\n    \"Campbell\\u2019s Chunky Chicken Noodle Soup\",\n    \"Clif Chocolate Chip protein bar\"\n  ],\n  \"reportIsComplete\": false\n}",
+  "evaluation_success": true
+}

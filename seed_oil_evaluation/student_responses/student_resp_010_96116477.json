@@ -1,0 +1,53 @@
+{
+  "conversation_id": "96116477-3ca2-4606-8396-d7170a7f83a7",
+  "evaluated_at": "2025-06-21T16:51:11.456020",
+  "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
+  "prompt_version": "v1.0",
+  "original_metadata": {
+    "conversation_id": "96116477-3ca2-4606-8396-d7170a7f83a7",
+    "generated_at": "2025-06-21T16:51:06.784907",
+    "difficulty_level": "moderate",
+    "user_cooperation_level": "detailed",
+    "conversation_completeness": "complete",
+    "expected_seed_oil_sources": [
+      "pasta sauce",
+      "nuts",
+      "protein bars"
+    ],
+    "actual_seed_oil_sources": [
+      "fries",
+      "mayonnaise",
+      "chips",
+      "packaged snacks",
+      "pasta sauce",
+      "protein bars"
+    ],
+    "estimated_hidden_seed_oils": 6,
+    "should_trigger_report": true,
+    "conversation_type": "positive_complete",
+    "conversation_flow_complexity": "moderate",
+    "total_messages": 9,
+    "user_completion_signals": {
+      "explicit_completion": true,
+      "implicit_completion": false,
+      "last_user_message": "dinner was pretty simple: about two cups of barilla spaghetti topped with roughly half a cup of classico tomato & basil pasta sauce straight from the jar. i sprinkled on some grated parmesan and had a side salad (mixed greens, cherry tomatoes, and cucumbers) dressed with olive oil and balsamic vinegar. that\u2019s everything i ate today.",
+      "completion_detected": true
+    },
+    "timeline_coverage": {
+      "meal_coverage": {
+        "breakfast": true,
+        "lunch": true,
+        "dinner": true,
+        "snacks": true
+      },
+      "covered_meals_count": 4,
+      "covered_full_day": true,
+      "missing_meals": []
+    },
+    "user_explicitly_finished": true,
+    "evaluation_notes": "Generated conversation - metadata includes completion analysis"
+  },
+  "student_response": "{\n  \"message\": \"Great job detailing your day! I've identified some potential seed oil sources: your roasted almonds, KIND protein bar, and Classico pasta sauce. Swapping these out could help lower your intake.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"roasted almonds\",\n    \"KIND protein bar\",\n    \"Classico Tomato & Basil pasta sauce\"\n  ],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"X.X g\",\n      \"dailyCalories\": \"XXXX kcal\",\n      \"laPercentageOfCalories\": \"X.X%\",\n      \"score\": \"Green|Yellow|Orange|Red\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your report will be ready after we review a few more details.\",\n    \"practicalTips\": [\n      \"Choose dry-roasted almonds without added oil\",\n      \"Opt for protein bars without seed oils\",\n      \"Select pasta sauces made with olive oil\"\n    ],\n    \"conclusion\": \"You're on the right track! Small tweaks can make a big difference.\"\n  },\n  \"reportIsComplete\": false\n}",
+  "student_response_readable": "{\n  \"message\": \"Great job detailing your day! I've identified some potential seed oil sources: your roasted almonds, KIND protein bar, and Classico pasta sauce. Swapping these out could help lower your intake.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"roasted almonds\",\n    \"KIND protein bar\",\n    \"Classico Tomato & Basil pasta sauce\"\n  ],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"X.X g\",\n      \"dailyCalories\": \"XXXX kcal\",\n      \"laPercentageOfCalories\": \"X.X%\",\n      \"score\": \"Green|Yellow|Orange|Red\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your report will be ready after we review a few more details.\",\n    \"practicalTips\": [\n      \"Choose dry-roasted almonds without added oil\",\n      \"Opt for protein bars without seed oils\",\n      \"Select pasta sauces made with olive oil\"\n    ],\n    \"conclusion\": \"You're on the right track! Small tweaks can make a big difference.\"\n  },\n  \"reportIsComplete\": false\n}",
+  "evaluation_success": true
+}

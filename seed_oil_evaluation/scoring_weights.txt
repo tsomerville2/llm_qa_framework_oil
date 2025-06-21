@@ -1,0 +1,4 @@
+correct_report_timing:20
+missing_reports:35
+premature_reports:10
+oil_report_quality:35

@@ -1,0 +1,17 @@
+# Judge LLM Choices
+# Format: provider:model_name
+# Edit this file to add/remove models or change names
+
+openai:o3
+openai:o3-mini
+openai:gpt-4o
+openai:gpt-4.1
+openai:gpt-4.1-mini
+openai:gpt-4.1-nano
+openai:o1-2024-12-17
+
+openai:o3-pro
+openai:gpt-4o-mini
+
+groq:qwen/qwen3-32b
+groq:meta-llama/llama-4-maverick-17b-128e-instruct

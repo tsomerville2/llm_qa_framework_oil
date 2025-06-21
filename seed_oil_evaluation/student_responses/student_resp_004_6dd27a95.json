@@ -1,0 +1,49 @@
+{
+  "conversation_id": "6dd27a95-201c-426d-9b90-2fb87f51e2e0",
+  "evaluated_at": "2025-06-21T16:51:08.833933",
+  "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
+  "prompt_version": "v1.0",
+  "original_metadata": {
+    "conversation_id": "6dd27a95-201c-426d-9b90-2fb87f51e2e0",
+    "generated_at": "2025-06-21T16:49:34.393987",
+    "difficulty_level": "simple",
+    "user_cooperation_level": "helpful",
+    "conversation_completeness": "partial",
+    "expected_seed_oil_sources": [
+      "chips",
+      "margarine"
+    ],
+    "actual_seed_oil_sources": [
+      "fries",
+      "chips",
+      "margarine"
+    ],
+    "estimated_hidden_seed_oils": 3,
+    "should_trigger_report": false,
+    "conversation_type": "negative_incomplete",
+    "conversation_flow_complexity": "simple",
+    "total_messages": 6,
+    "user_completion_signals": {
+      "explicit_completion": false,
+      "implicit_completion": false,
+      "last_user_message": "i haven\u2019t had dinner yet, but earlier this afternoon i snacked on a banana and a handful of almonds.",
+      "completion_detected": false
+    },
+    "timeline_coverage": {
+      "meal_coverage": {
+        "breakfast": true,
+        "lunch": true,
+        "dinner": true,
+        "snacks": true
+      },
+      "covered_meals_count": 4,
+      "covered_full_day": true,
+      "missing_meals": []
+    },
+    "user_explicitly_finished": false,
+    "evaluation_notes": "Generated conversation - metadata includes completion analysis"
+  },
+  "student_response": "{\n  \"message\": \"Great snack choice! The banana and almonds are seed-oil free. What about dinner plans - what's on the menu for tonight?\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\"margarine\", \"Lay's Classic potato chips\"],\n  \"reportIsComplete\": false\n}",
+  "student_response_readable": "{\n  \"message\": \"Great snack choice! The banana and almonds are seed-oil free. What about dinner plans - what's on the menu for tonight?\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"margarine\",\n    \"Lay's Classic potato chips\"\n  ],\n  \"reportIsComplete\": false\n}",
+  "evaluation_success": true
+}

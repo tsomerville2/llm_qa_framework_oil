@@ -1,0 +1,14 @@
+# Conversation Generation Weights
+# Format: category_name:percentage (should sum to 100)
+
+# POSITIVE examples: Complete conversations (breakfast→lunch→dinner+snacks covered)
+# These should ALWAYS be marked: conversation_completeness="complete", should_trigger_report=true
+positive_complete_conversations:75
+
+# NEGATIVE examples: Truly incomplete conversations (stop mid-conversation randomly)
+# These should ALWAYS be marked: conversation_completeness="partial", should_trigger_report=false  
+negative_incomplete_conversations:15
+
+# USER-REQUESTED examples: User explicitly asks for report/analysis
+# These should ALWAYS be marked: conversation_completeness="complete", should_trigger_report=true
+user_requested_reports:10

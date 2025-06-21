@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "conversation_id": "93883e0f-7f85-4c6b-96e0-af52ef79291e",
+    "generated_at": "2025-06-21T16:49:26.836795",
+    "difficulty_level": "complex",
+    "user_cooperation_level": "evasive",
+    "conversation_completeness": "partial",
+    "expected_seed_oil_sources": [
+      "hidden restaurant oils",
+      "packaged snacks",
+      "condiments"
+    ],
+    "actual_seed_oil_sources": [
+      "fries",
+      "mayonnaise",
+      "fried chicken",
+      "takeout",
+      "margarine"
+    ],
+    "estimated_hidden_seed_oils": 5,
+    "should_trigger_report": false,
+    "conversation_type": "negative_incomplete",
+    "conversation_flow_complexity": "complex",
+    "total_messages": 14,
+    "user_completion_signals": {
+      "explicit_completion": false,
+      "implicit_completion": false,
+      "last_user_message": "i munched on a clif bar around 4 p.m. and some kettle corn while watching a show.",
+      "completion_detected": false
+    },
+    "timeline_coverage": {
+      "meal_coverage": {
+        "breakfast": true,
+        "lunch": true,
+        "dinner": true,
+        "snacks": true
+      },
+      "covered_meals_count": 4,
+      "covered_full_day": true,
+      "missing_meals": []
+    },
+    "user_explicitly_finished": false,
+    "evaluation_notes": "Generated conversation - metadata includes completion analysis"
+  },
+  "conversation": {
+    "messages": [
+      {
+        "role": "assistant",
+        "content": "Hi there! I'm The Seed Oil Sleuth. If you don\u2019t mind, let\u2019s go meal-by-meal so I can help spot any sneaky seed oils. What did breakfast look like today?"
+      },
+      {
+        "role": "user",
+        "content": "Breakfast was pretty basic\u2014just coffee and a bagel."
+      },
+      {
+        "role": "assistant",
+        "content": "Got it. Was the bagel plain, or did you add anything like butter, cream cheese, or a spread?"
+      },
+      {
+        "role": "user",
+        "content": "Uh, a little cream cheese. Nothing fancy."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks. Let\u2019s move to lunch. Where did you eat and what did you have?"
+      },
+      {
+        "role": "user",
+        "content": "I grabbed a chicken sandwich from the deli near my office."
+      },
+      {
+        "role": "assistant",
+        "content": "Deli sandwiches can hide seed oils in a few spots. Do you remember if the chicken was grilled there or pre-made? And what came on the sandwich\u2014like sauces or sides?"
+      },
+      {
+        "role": "user",
+        "content": "They grill it on-site, I think. It had lettuce, tomato, and some mayo. Came with a small bag of Lay\u2019s."
+      },
+      {
+        "role": "assistant",
+        "content": "Good to know. Restaurant grills often use canola or soybean oil, and mayo is typically soybean-oil based. The Lay\u2019s are also fried in vegetable oils. How about dinner?"
+      },
+      {
+        "role": "user",
+        "content": "Honestly, I was tired, so I ordered stir-fry from a Thai spot\u2014chicken, veggies, rice."
+      },
+      {
+        "role": "assistant",
+        "content": "Most Thai take-outs use soybean or canola oil in the wok. Did you add any sauces or condiments at home\u2014maybe extra soy sauce or sriracha?"
+      },
+      {
+        "role": "user",
+        "content": "Just a couple packets of soy sauce they tossed in the bag."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood. Any snacks between meals or after dinner?"
+      },
+      {
+        "role": "user",
+        "content": "I munched on a Clif Bar around 4 p.m. and some kettle corn while watching a show."
+      }
+    ]
+  }
+}

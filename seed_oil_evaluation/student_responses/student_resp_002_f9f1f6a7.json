@@ -1,0 +1,52 @@
+{
+  "conversation_id": "f9f1f6a7-0517-4a03-92f0-2f1096c58cea",
+  "evaluated_at": "2025-06-21T16:51:08.278170",
+  "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
+  "prompt_version": "v1.0",
+  "original_metadata": {
+    "conversation_id": "f9f1f6a7-0517-4a03-92f0-2f1096c58cea",
+    "generated_at": "2025-06-21T16:49:14.324574",
+    "difficulty_level": "moderate",
+    "user_cooperation_level": "detailed",
+    "conversation_completeness": "complete",
+    "expected_seed_oil_sources": [
+      "salad dressing",
+      "crackers",
+      "fried chicken"
+    ],
+    "actual_seed_oil_sources": [
+      "fries",
+      "crackers",
+      "fried chicken",
+      "salad dressing",
+      "takeout"
+    ],
+    "estimated_hidden_seed_oils": 5,
+    "should_trigger_report": true,
+    "conversation_type": "positive_complete",
+    "conversation_flow_complexity": "moderate",
+    "total_messages": 13,
+    "user_completion_signals": {
+      "explicit_completion": true,
+      "implicit_completion": false,
+      "last_user_message": "nope, that\u2019s everything i ate today.",
+      "completion_detected": true
+    },
+    "timeline_coverage": {
+      "meal_coverage": {
+        "breakfast": true,
+        "lunch": true,
+        "dinner": true,
+        "snacks": true
+      },
+      "covered_meals_count": 4,
+      "covered_full_day": true,
+      "missing_meals": []
+    },
+    "user_explicitly_finished": true,
+    "evaluation_notes": "Generated conversation - metadata includes completion analysis"
+  },
+  "student_response": "{\n  \"message\": \"Let's review your day and see where we can make some swaps to reduce industrial seed oils.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"store-bought ranch salad dressing\",\n    \"Wheat Thins crackers\",\n    \"fried chicken cooked in vegetable oil\"\n  ],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"X.X g\",\n      \"dailyCalories\": \"2000 kcal\",\n      \"laPercentageOfCalories\": \"X.X%\",\n      \"score\": \"\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your day included several likely sources of industrial seed oils: store-bought ranch dressing (probably soybean or canola oil), Wheat Thins crackers (likely canola and/or soybean oil), and fried chicken cooked in vegetable oil (a mix of oils).\",\n    \"practicalTips\": [\n      \"Consider making your own ranch dressing with olive or avocado oil.\",\n      \"Swap Wheat Thins for whole grain or seed-free crackers.\",\n      \"Opt for baked or air-fried chicken instead of deep-fried.\"\n    ],\n    \"conclusion\": \"You're aware of the main areas to tackle. Small swaps can make a difference.\"\n  },\n  \"reportIsComplete\": false\n}",
+  "student_response_readable": "{\n  \"message\": \"Let's review your day and see where we can make some swaps to reduce industrial seed oils.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"store-bought ranch salad dressing\",\n    \"Wheat Thins crackers\",\n    \"fried chicken cooked in vegetable oil\"\n  ],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"X.X g\",\n      \"dailyCalories\": \"2000 kcal\",\n      \"laPercentageOfCalories\": \"X.X%\",\n      \"score\": \"\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your day included several likely sources of industrial seed oils: store-bought ranch dressing (probably soybean or canola oil), Wheat Thins crackers (likely canola and/or soybean oil), and fried chicken cooked in vegetable oil (a mix of oils).\",\n    \"practicalTips\": [\n      \"Consider making your own ranch dressing with olive or avocado oil.\",\n      \"Swap Wheat Thins for whole grain or seed-free crackers.\",\n      \"Opt for baked or air-fried chicken instead of deep-fried.\"\n    ],\n    \"conclusion\": \"You're aware of the main areas to tackle. Small swaps can make a difference.\"\n  },\n  \"reportIsComplete\": false\n}",
+  "evaluation_success": true
+}
