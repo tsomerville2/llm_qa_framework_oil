@@ -1,8 +1,8 @@
 {
   "conversation_id": "93883e0f-7f85-4c6b-96e0-af52ef79291e",
-  "evaluated_at": "2025-06-21T16:51:08.557614",
-  "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
-  "prompt_version": "v1.0",
+  "evaluated_at": "2025-06-24T11:02:27.125694",
+  "student_model": "openai:gpt-4.1-nano",
+  "prompt_version": "v1.1",
   "original_metadata": {
     "conversation_id": "93883e0f-7f85-4c6b-96e0-af52ef79291e",
     "generated_at": "2025-06-21T16:49:26.836795",
@@ -46,7 +46,7 @@
     "user_explicitly_finished": false,
     "evaluation_notes": "Generated conversation - metadata includes completion analysis"
   },
-  "student_response": "{\n  \"message\": \"Clif Bars and kettle corn can contain seed oils. What type of cooking oil do you use at home for meal prep?\",\n  \"emotion\": \"Informative\",\n  \"possibleSeedOilSources\": [\"Clif Bar\", \"kettle corn\", \"soy sauce\", \"mayo\", \"Lay's\", \"stir-fry\"],\n  \"reportIsComplete\": false\n}",
-  "student_response_readable": "{\n  \"message\": \"Clif Bars and kettle corn can contain seed oils. What type of cooking oil do you use at home for meal prep?\",\n  \"emotion\": \"Informative\",\n  \"possibleSeedOilSources\": [\n    \"Clif Bar\",\n    \"kettle corn\",\n    \"soy sauce\",\n    \"mayo\",\n    \"Lay's\",\n    \"stir-fry\"\n  ],\n  \"reportIsComplete\": false\n}",
+  "student_response": "```json\n{\n  \"Estimated total LA\": \"12.3 g\",\n  \"Daily calories\": 2000,\n  \"LA as % of calories\": \"0.6 %\",\n  \"Score\": \"Yellow\",\n  \"Ideal target\": \"<5 g AND <2 % of calories\",\n  \"Recommendations\": [\n    \"Swap store-bought mayo for avocado or olive oil-based spreads.\",\n    \"Choose chips or snacks baked in olive or avocado oil instead of fried varieties.\",\n    \"Use coconut aminos or homemade sauces without seed oils for stir-fry.\",\n    \"Opt for unprocessed snacks like nuts or fresh fruit as alternatives to kettle corn.\"\n  ],\n  \"Thank you for using the Seed-Oil Sleuth!\"\n}\n```",
+  "student_response_readable": "```json\n{\n  \"Estimated total LA\": \"12.3 g\",\n  \"Daily calories\": 2000,\n  \"LA as % of calories\": \"0.6 %\",\n  \"Score\": \"Yellow\",\n  \"Ideal target\": \"<5 g AND <2 % of calories\",\n  \"Recommendations\": [\n    \"Swap store-bought mayo for avocado or olive oil-based spreads.\",\n    \"Choose chips or snacks baked in olive or avocado oil instead of fried varieties.\",\n    \"Use coconut aminos or homemade sauces without seed oils for stir-fry.\",\n    \"Opt for unprocessed snacks like nuts or fresh fruit as alternatives to kettle corn.\"\n  ],\n  \"Thank you for using the Seed-Oil Sleuth!\"\n}\n```",
   "evaluation_success": true
 }

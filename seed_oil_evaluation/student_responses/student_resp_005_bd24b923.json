@@ -1,8 +1,8 @@
 {
   "conversation_id": "bd24b923-fc5b-4e40-af6b-2e8f82264208",
-  "evaluated_at": "2025-06-21T16:51:09.457839",
-  "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
-  "prompt_version": "v1.0",
+  "evaluated_at": "2025-06-24T11:02:29.697144",
+  "student_model": "openai:gpt-4.1-nano",
+  "prompt_version": "v1.1",
   "original_metadata": {
     "conversation_id": "bd24b923-fc5b-4e40-af6b-2e8f82264208",
     "generated_at": "2025-06-21T16:49:47.898230",
@@ -44,7 +44,7 @@
     "user_explicitly_finished": false,
     "evaluation_notes": "Generated conversation - metadata includes completion analysis"
   },
-  "student_response": "{\n  \"message\": \"You're doing great! I've got a good sense of your daily eats. Now, let's see where those seed oils might be hiding.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\"peanut butter\", \"Amy's Black Bean & Cheese frozen burrito\", \"Five Guys fries\", \"chocolate-chip muffin\"],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"still to be calculated\",\n      \"dailyCalories\": \"still to be calculated\",\n      \"laPercentageOfCalories\": \"still to be calculated\",\n      \"score\": \"still to be determined\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your report will be ready below!\",\n    \"practicalTips\": [\"consider swapping peanut butter with a natural alternative\", \"be mindful of processed foods like frozen burritos and muffins\"],\n    \"conclusion\": \"You're on the right track! Small tweaks can make a big difference.\"\n  },\n  \"reportIsComplete\": false\n}",
-  "student_response_readable": "{\n  \"message\": \"You're doing great! I've got a good sense of your daily eats. Now, let's see where those seed oils might be hiding.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"peanut butter\",\n    \"Amy's Black Bean & Cheese frozen burrito\",\n    \"Five Guys fries\",\n    \"chocolate-chip muffin\"\n  ],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"still to be calculated\",\n      \"dailyCalories\": \"still to be calculated\",\n      \"laPercentageOfCalories\": \"still to be calculated\",\n      \"score\": \"still to be determined\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your report will be ready below!\",\n    \"practicalTips\": [\n      \"consider swapping peanut butter with a natural alternative\",\n      \"be mindful of processed foods like frozen burritos and muffins\"\n    ],\n    \"conclusion\": \"You're on the right track! Small tweaks can make a big difference.\"\n  },\n  \"reportIsComplete\": false\n}",
+  "student_response": "```json\n{\n  \"estimated_linoleic_acid\": 7.2,\n  \"daily_calories\": 2000,\n  \"la_percentage\": 3.6,\n  \"score\": \"Yellow / Caution\",\n  \"ideal_target\": \"<5 g AND <2 % of calories\",\n  \"seed_oil_swaps\": [\n    \"Use avocado or olive oil instead of peanut butter for spreads\",\n    \"Choose microwave meals with olive oil or no added seed oils\",\n    \"Pick fries cooked in olive oil or baked, rather than fried in seed oil\",\n    \"Replace the chocolate-chip muffin with a fruit or homemade snack using nut butters\",\n    \"Switch almonds to roasted, dry-roasted nuts without added seed oils\"\n  ],\n  \"note\": \"Your seed oil intake is moderate but can be reduced further by choosing less processed options and swapping oils.\"\n}\n```",
+  "student_response_readable": "```json\n{\n  \"estimated_linoleic_acid\": 7.2,\n  \"daily_calories\": 2000,\n  \"la_percentage\": 3.6,\n  \"score\": \"Yellow / Caution\",\n  \"ideal_target\": \"<5 g AND <2 % of calories\",\n  \"seed_oil_swaps\": [\n    \"Use avocado or olive oil instead of peanut butter for spreads\",\n    \"Choose microwave meals with olive oil or no added seed oils\",\n    \"Pick fries cooked in olive oil or baked, rather than fried in seed oil\",\n    \"Replace the chocolate-chip muffin with a fruit or homemade snack using nut butters\",\n    \"Switch almonds to roasted, dry-roasted nuts without added seed oils\"\n  ],\n  \"note\": \"Your seed oil intake is moderate but can be reduced further by choosing less processed options and swapping oils.\"\n}\n```",
   "evaluation_success": true
 }

@@ -1,8 +1,8 @@
 {
   "conversation_id": "72624c49-2ebf-479e-99a4-34742cdd2702",
-  "evaluated_at": "2025-06-21T16:51:07.603325",
-  "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
-  "prompt_version": "v1.0",
+  "evaluated_at": "2025-06-24T11:02:22.474450",
+  "student_model": "openai:gpt-4.1-nano",
+  "prompt_version": "v1.1",
   "original_metadata": {
     "conversation_id": "72624c49-2ebf-479e-99a4-34742cdd2702",
     "generated_at": "2025-06-21T16:48:59.911851",
@@ -45,7 +45,7 @@
     "user_explicitly_finished": true,
     "evaluation_notes": "Generated conversation - metadata includes completion analysis"
   },
-  "student_response": "{\n  \"message\": \"Great job sharing your day! I see a few seed-oil sources: the fries at lunch (peanut oil) and the mayonnaise in your tuna salad. Swapping mayo for avocado-based spread or olive-oil mayo, and baking potato wedges at home in olive oil can help cut back. Your breakfast and snacks were seed-oil-light!\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\"peanut oil\", \"Hellmann's mayonnaise\"],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"X.X g\",\n      \"dailyCalories\": \"XXXX kcal\",\n      \"laPercentageOfCalories\": \"X.X%\",\n      \"score\": \"Green|Yellow|Orange|Red\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your day included seed oils from fries and mayonnaise.\",\n    \"practicalTips\": [\"Swap mayo for avocado-based spread\", \"Bake potato wedges at home in olive oil\"],\n    \"conclusion\": \"Keep up the good work, small tweaks can make a big difference!\"\n  },\n  \"reportIsComplete\": false\n}",
-  "student_response_readable": "{\n  \"message\": \"Great job sharing your day! I see a few seed-oil sources: the fries at lunch (peanut oil) and the mayonnaise in your tuna salad. Swapping mayo for avocado-based spread or olive-oil mayo, and baking potato wedges at home in olive oil can help cut back. Your breakfast and snacks were seed-oil-light!\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"peanut oil\",\n    \"Hellmann's mayonnaise\"\n  ],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"X.X g\",\n      \"dailyCalories\": \"XXXX kcal\",\n      \"laPercentageOfCalories\": \"X.X%\",\n      \"score\": \"Green|Yellow|Orange|Red\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your day included seed oils from fries and mayonnaise.\",\n    \"practicalTips\": [\n      \"Swap mayo for avocado-based spread\",\n      \"Bake potato wedges at home in olive oil\"\n    ],\n    \"conclusion\": \"Keep up the good work, small tweaks can make a big difference!\"\n  },\n  \"reportIsComplete\": false\n}",
+  "student_response": "{\n  \"Estimated total LA\": \"4.3 g\",\n  \"Daily calories\": 2000,\n  \"LA as % of calories\": \"0.2 %\",\n  \"Score\": \"Green / Optimal\",\n  \"Ideal target\": \"<5 g AND <2 % of calories\",\n  \"Seed-oil swaps\": [\n    \"Replace mayonnaise with avocado or olive-oil spread in tuna salad\",\n    \"Bake potato wedges at home in olive oil instead of restaurant fries\"\n  ],\n  \"Note\": \"Your overall seed-oil intake today was low, mainly from restaurant fries and mayonnaise. Consider these swaps to further reduce LA if desired.\"\n}",
+  "student_response_readable": "{\n  \"Estimated total LA\": \"4.3 g\",\n  \"Daily calories\": 2000,\n  \"LA as % of calories\": \"0.2 %\",\n  \"Score\": \"Green / Optimal\",\n  \"Ideal target\": \"<5 g AND <2 % of calories\",\n  \"Seed-oil swaps\": [\n    \"Replace mayonnaise with avocado or olive-oil spread in tuna salad\",\n    \"Bake potato wedges at home in olive oil instead of restaurant fries\"\n  ],\n  \"Note\": \"Your overall seed-oil intake today was low, mainly from restaurant fries and mayonnaise. Consider these swaps to further reduce LA if desired.\"\n}",
   "evaluation_success": true
 }

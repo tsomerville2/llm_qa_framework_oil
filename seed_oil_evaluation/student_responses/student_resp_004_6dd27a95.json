@@ -1,8 +1,8 @@
 {
   "conversation_id": "6dd27a95-201c-426d-9b90-2fb87f51e2e0",
-  "evaluated_at": "2025-06-21T16:51:08.833933",
-  "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
-  "prompt_version": "v1.0",
+  "evaluated_at": "2025-06-24T11:02:28.098530",
+  "student_model": "openai:gpt-4.1-nano",
+  "prompt_version": "v1.1",
   "original_metadata": {
     "conversation_id": "6dd27a95-201c-426d-9b90-2fb87f51e2e0",
     "generated_at": "2025-06-21T16:49:34.393987",
@@ -43,7 +43,7 @@
     "user_explicitly_finished": false,
     "evaluation_notes": "Generated conversation - metadata includes completion analysis"
   },
-  "student_response": "{\n  \"message\": \"Great snack choice! The banana and almonds are seed-oil free. What about dinner plans - what's on the menu for tonight?\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\"margarine\", \"Lay's Classic potato chips\"],\n  \"reportIsComplete\": false\n}",
-  "student_response_readable": "{\n  \"message\": \"Great snack choice! The banana and almonds are seed-oil free. What about dinner plans - what's on the menu for tonight?\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"margarine\",\n    \"Lay's Classic potato chips\"\n  ],\n  \"reportIsComplete\": false\n}",
+  "student_response": "{\n  \"PossibleSeedOilSources\": [\n    {\n      \"Item\": \"Lay\u2019s Classic potato chips\",\n      \"Portion\": \"small bag\",\n      \"Category\": \"Snacks / packaged foods\"\n    }\n  ],\n  \"Observations\": \"The chips are fried in seed oils, likely soybean or sunflower oil. Bananas and almonds typically do not contain seed oils.\"\n}",
+  "student_response_readable": "{\n  \"PossibleSeedOilSources\": [\n    {\n      \"Item\": \"Lay\\u2019s Classic potato chips\",\n      \"Portion\": \"small bag\",\n      \"Category\": \"Snacks / packaged foods\"\n    }\n  ],\n  \"Observations\": \"The chips are fried in seed oils, likely soybean or sunflower oil. Bananas and almonds typically do not contain seed oils.\"\n}",
   "evaluation_success": true
 }

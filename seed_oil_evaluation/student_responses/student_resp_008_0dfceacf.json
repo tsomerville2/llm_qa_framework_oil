@@ -1,8 +1,8 @@
 {
   "conversation_id": "0dfceacf-ed75-4e88-bb52-2dc7b70c6f89",
-  "evaluated_at": "2025-06-21T16:51:10.566272",
-  "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
-  "prompt_version": "v1.0",
+  "evaluated_at": "2025-06-24T11:02:35.058113",
+  "student_model": "openai:gpt-4.1-nano",
+  "prompt_version": "v1.1",
   "original_metadata": {
     "conversation_id": "0dfceacf-ed75-4e88-bb52-2dc7b70c6f89",
     "generated_at": "2025-06-21T16:50:33.886399",
@@ -46,7 +46,7 @@
     "user_explicitly_finished": true,
     "evaluation_notes": "Generated conversation - metadata includes completion analysis"
   },
-  "student_response": "{\n  \"message\": \"Got it! Now, let's discuss cooking oils and packaged foods. What oils do you use for cooking at home besides butter and avocado oil?\",\n  \"emotion\": \"Informative\",\n  \"possibleSeedOilSources\": [\"Coffee-mate creamer\", \"Nature Valley Oats & Honey granola\", \"Campbell\u2019s Chunky Chicken Noodle Soup\", \"Clif Chocolate Chip protein bar\"],\n  \"reportIsComplete\": false\n}",
-  "student_response_readable": "{\n  \"message\": \"Got it! Now, let's discuss cooking oils and packaged foods. What oils do you use for cooking at home besides butter and avocado oil?\",\n  \"emotion\": \"Informative\",\n  \"possibleSeedOilSources\": [\n    \"Coffee-mate creamer\",\n    \"Nature Valley Oats & Honey granola\",\n    \"Campbell\\u2019s Chunky Chicken Noodle Soup\",\n    \"Clif Chocolate Chip protein bar\"\n  ],\n  \"reportIsComplete\": false\n}",
+  "student_response": "```json\n{\n  \"Estimated LA\": 4.8,\n  \"Daily Calories\": 2150,\n  \"LA as % of Calories\": 0.22,\n  \"Score\": \"Green\",\n  \"Ideal target\": \"< 5 g and < 2 % of calories\",\n  \"Suggested Swaps\": [\n    \"Use Greek yogurt plain or with minimal ingredients to avoid seed oils in flavored versions.\",\n    \"Choose granola with nuts and seeds only, or make your own without seed oils.\",\n    \"Select canned soups labeled as 'seed oil-free' or prepare homemade soup.\",\n    \"Opt for salads with homemade dressing using olive oil and vinegar or lemon juice.\",\n    \"Replace protein bars with options made at home or those specifically free of seed oils.\",\n    \"Check labels on snacks like chocolate or other packaged foods for seed oil content and choose alternatives.\"\n  ],\n  \"Thank you for sharing your food diary!\"\n}\n```",
+  "student_response_readable": "```json\n{\n  \"Estimated LA\": 4.8,\n  \"Daily Calories\": 2150,\n  \"LA as % of Calories\": 0.22,\n  \"Score\": \"Green\",\n  \"Ideal target\": \"< 5 g and < 2 % of calories\",\n  \"Suggested Swaps\": [\n    \"Use Greek yogurt plain or with minimal ingredients to avoid seed oils in flavored versions.\",\n    \"Choose granola with nuts and seeds only, or make your own without seed oils.\",\n    \"Select canned soups labeled as 'seed oil-free' or prepare homemade soup.\",\n    \"Opt for salads with homemade dressing using olive oil and vinegar or lemon juice.\",\n    \"Replace protein bars with options made at home or those specifically free of seed oils.\",\n    \"Check labels on snacks like chocolate or other packaged foods for seed oil content and choose alternatives.\"\n  ],\n  \"Thank you for sharing your food diary!\"\n}\n```",
   "evaluation_success": true
 }

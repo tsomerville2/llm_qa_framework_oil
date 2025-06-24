@@ -1,15 +1,15 @@
 {
-  "evaluated_at": "2025-06-21T16:51:11.457810",
+  "evaluated_at": "2025-06-24T11:02:38.713732",
   "total_conversations": 10,
   "successful_evaluations": 10,
-  "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
-  "prompt_version": "v1.0",
+  "student_model": "openai:gpt-4.1-nano",
+  "prompt_version": "v1.1",
   "results": [
     {
       "conversation_id": "72624c49-2ebf-479e-99a4-34742cdd2702",
-      "evaluated_at": "2025-06-21T16:51:07.603325",
-      "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
-      "prompt_version": "v1.0",
+      "evaluated_at": "2025-06-24T11:02:22.474450",
+      "student_model": "openai:gpt-4.1-nano",
+      "prompt_version": "v1.1",
       "original_metadata": {
         "conversation_id": "72624c49-2ebf-479e-99a4-34742cdd2702",
         "generated_at": "2025-06-21T16:48:59.911851",
@@ -52,15 +52,15 @@
         "user_explicitly_finished": true,
         "evaluation_notes": "Generated conversation - metadata includes completion analysis"
       },
-      "student_response": "{\n  \"message\": \"Great job sharing your day! I see a few seed-oil sources: the fries at lunch (peanut oil) and the mayonnaise in your tuna salad. Swapping mayo for avocado-based spread or olive-oil mayo, and baking potato wedges at home in olive oil can help cut back. Your breakfast and snacks were seed-oil-light!\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\"peanut oil\", \"Hellmann's mayonnaise\"],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"X.X g\",\n      \"dailyCalories\": \"XXXX kcal\",\n      \"laPercentageOfCalories\": \"X.X%\",\n      \"score\": \"Green|Yellow|Orange|Red\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your day included seed oils from fries and mayonnaise.\",\n    \"practicalTips\": [\"Swap mayo for avocado-based spread\", \"Bake potato wedges at home in olive oil\"],\n    \"conclusion\": \"Keep up the good work, small tweaks can make a big difference!\"\n  },\n  \"reportIsComplete\": false\n}",
-      "student_response_readable": "{\n  \"message\": \"Great job sharing your day! I see a few seed-oil sources: the fries at lunch (peanut oil) and the mayonnaise in your tuna salad. Swapping mayo for avocado-based spread or olive-oil mayo, and baking potato wedges at home in olive oil can help cut back. Your breakfast and snacks were seed-oil-light!\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"peanut oil\",\n    \"Hellmann's mayonnaise\"\n  ],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"X.X g\",\n      \"dailyCalories\": \"XXXX kcal\",\n      \"laPercentageOfCalories\": \"X.X%\",\n      \"score\": \"Green|Yellow|Orange|Red\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your day included seed oils from fries and mayonnaise.\",\n    \"practicalTips\": [\n      \"Swap mayo for avocado-based spread\",\n      \"Bake potato wedges at home in olive oil\"\n    ],\n    \"conclusion\": \"Keep up the good work, small tweaks can make a big difference!\"\n  },\n  \"reportIsComplete\": false\n}",
+      "student_response": "{\n  \"Estimated total LA\": \"4.3 g\",\n  \"Daily calories\": 2000,\n  \"LA as % of calories\": \"0.2 %\",\n  \"Score\": \"Green / Optimal\",\n  \"Ideal target\": \"<5 g AND <2 % of calories\",\n  \"Seed-oil swaps\": [\n    \"Replace mayonnaise with avocado or olive-oil spread in tuna salad\",\n    \"Bake potato wedges at home in olive oil instead of restaurant fries\"\n  ],\n  \"Note\": \"Your overall seed-oil intake today was low, mainly from restaurant fries and mayonnaise. Consider these swaps to further reduce LA if desired.\"\n}",
+      "student_response_readable": "{\n  \"Estimated total LA\": \"4.3 g\",\n  \"Daily calories\": 2000,\n  \"LA as % of calories\": \"0.2 %\",\n  \"Score\": \"Green / Optimal\",\n  \"Ideal target\": \"<5 g AND <2 % of calories\",\n  \"Seed-oil swaps\": [\n    \"Replace mayonnaise with avocado or olive-oil spread in tuna salad\",\n    \"Bake potato wedges at home in olive oil instead of restaurant fries\"\n  ],\n  \"Note\": \"Your overall seed-oil intake today was low, mainly from restaurant fries and mayonnaise. Consider these swaps to further reduce LA if desired.\"\n}",
       "evaluation_success": true
     },
     {
       "conversation_id": "f9f1f6a7-0517-4a03-92f0-2f1096c58cea",
-      "evaluated_at": "2025-06-21T16:51:08.278170",
-      "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
-      "prompt_version": "v1.0",
+      "evaluated_at": "2025-06-24T11:02:24.678906",
+      "student_model": "openai:gpt-4.1-nano",
+      "prompt_version": "v1.1",
       "original_metadata": {
         "conversation_id": "f9f1f6a7-0517-4a03-92f0-2f1096c58cea",
         "generated_at": "2025-06-21T16:49:14.324574",
@@ -104,15 +104,15 @@
         "user_explicitly_finished": true,
         "evaluation_notes": "Generated conversation - metadata includes completion analysis"
       },
-      "student_response": "{\n  \"message\": \"Let's review your day and see where we can make some swaps to reduce industrial seed oils.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"store-bought ranch salad dressing\",\n    \"Wheat Thins crackers\",\n    \"fried chicken cooked in vegetable oil\"\n  ],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"X.X g\",\n      \"dailyCalories\": \"2000 kcal\",\n      \"laPercentageOfCalories\": \"X.X%\",\n      \"score\": \"\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your day included several likely sources of industrial seed oils: store-bought ranch dressing (probably soybean or canola oil), Wheat Thins crackers (likely canola and/or soybean oil), and fried chicken cooked in vegetable oil (a mix of oils).\",\n    \"practicalTips\": [\n      \"Consider making your own ranch dressing with olive or avocado oil.\",\n      \"Swap Wheat Thins for whole grain or seed-free crackers.\",\n      \"Opt for baked or air-fried chicken instead of deep-fried.\"\n    ],\n    \"conclusion\": \"You're aware of the main areas to tackle. Small swaps can make a difference.\"\n  },\n  \"reportIsComplete\": false\n}",
-      "student_response_readable": "{\n  \"message\": \"Let's review your day and see where we can make some swaps to reduce industrial seed oils.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"store-bought ranch salad dressing\",\n    \"Wheat Thins crackers\",\n    \"fried chicken cooked in vegetable oil\"\n  ],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"X.X g\",\n      \"dailyCalories\": \"2000 kcal\",\n      \"laPercentageOfCalories\": \"X.X%\",\n      \"score\": \"\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your day included several likely sources of industrial seed oils: store-bought ranch dressing (probably soybean or canola oil), Wheat Thins crackers (likely canola and/or soybean oil), and fried chicken cooked in vegetable oil (a mix of oils).\",\n    \"practicalTips\": [\n      \"Consider making your own ranch dressing with olive or avocado oil.\",\n      \"Swap Wheat Thins for whole grain or seed-free crackers.\",\n      \"Opt for baked or air-fried chicken instead of deep-fried.\"\n    ],\n    \"conclusion\": \"You're aware of the main areas to tackle. Small swaps can make a difference.\"\n  },\n  \"reportIsComplete\": false\n}",
+      "student_response": "```json\n{\n  \"estimated_linoleic_acid\": 11.5,\n  \"daily_calories\": 2050,\n  \"la_percentage\": 5.4,\n  \"score\": \"Yellow / Caution\",\n  \"ideal_target\": \"less than 5 g AND less than 2% of calories\",\n  \"high_impact_swaps\": [\n    \"Replace ranch dressing with olive oil-based vinaigrette\",\n    \"Choose crackers made with olive or avocado oil instead of Wheat Thins\",\n    \"Opt for home-cooked fried foods baked or saut\u00e9ed in olive or avocado oil\",\n    \"Use butter or animal fats for frying instead of vegetable oils\"\n  ],\n  \"remark\": \"Your seed-oil intake is moderate but can be lowered further for optimal health. Great job in keeping other foods mixed and balanced!\"\n}\n```",
+      "student_response_readable": "```json\n{\n  \"estimated_linoleic_acid\": 11.5,\n  \"daily_calories\": 2050,\n  \"la_percentage\": 5.4,\n  \"score\": \"Yellow / Caution\",\n  \"ideal_target\": \"less than 5 g AND less than 2% of calories\",\n  \"high_impact_swaps\": [\n    \"Replace ranch dressing with olive oil-based vinaigrette\",\n    \"Choose crackers made with olive or avocado oil instead of Wheat Thins\",\n    \"Opt for home-cooked fried foods baked or saut\u00e9ed in olive or avocado oil\",\n    \"Use butter or animal fats for frying instead of vegetable oils\"\n  ],\n  \"remark\": \"Your seed-oil intake is moderate but can be lowered further for optimal health. Great job in keeping other foods mixed and balanced!\"\n}\n```",
       "evaluation_success": true
     },
     {
       "conversation_id": "93883e0f-7f85-4c6b-96e0-af52ef79291e",
-      "evaluated_at": "2025-06-21T16:51:08.557614",
-      "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
-      "prompt_version": "v1.0",
+      "evaluated_at": "2025-06-24T11:02:27.125694",
+      "student_model": "openai:gpt-4.1-nano",
+      "prompt_version": "v1.1",
       "original_metadata": {
         "conversation_id": "93883e0f-7f85-4c6b-96e0-af52ef79291e",
         "generated_at": "2025-06-21T16:49:26.836795",
@@ -156,15 +156,15 @@
         "user_explicitly_finished": false,
         "evaluation_notes": "Generated conversation - metadata includes completion analysis"
       },
-      "student_response": "{\n  \"message\": \"Clif Bars and kettle corn can contain seed oils. What type of cooking oil do you use at home for meal prep?\",\n  \"emotion\": \"Informative\",\n  \"possibleSeedOilSources\": [\"Clif Bar\", \"kettle corn\", \"soy sauce\", \"mayo\", \"Lay's\", \"stir-fry\"],\n  \"reportIsComplete\": false\n}",
-      "student_response_readable": "{\n  \"message\": \"Clif Bars and kettle corn can contain seed oils. What type of cooking oil do you use at home for meal prep?\",\n  \"emotion\": \"Informative\",\n  \"possibleSeedOilSources\": [\n    \"Clif Bar\",\n    \"kettle corn\",\n    \"soy sauce\",\n    \"mayo\",\n    \"Lay's\",\n    \"stir-fry\"\n  ],\n  \"reportIsComplete\": false\n}",
+      "student_response": "```json\n{\n  \"Estimated total LA\": \"12.3 g\",\n  \"Daily calories\": 2000,\n  \"LA as % of calories\": \"0.6 %\",\n  \"Score\": \"Yellow\",\n  \"Ideal target\": \"<5 g AND <2 % of calories\",\n  \"Recommendations\": [\n    \"Swap store-bought mayo for avocado or olive oil-based spreads.\",\n    \"Choose chips or snacks baked in olive or avocado oil instead of fried varieties.\",\n    \"Use coconut aminos or homemade sauces without seed oils for stir-fry.\",\n    \"Opt for unprocessed snacks like nuts or fresh fruit as alternatives to kettle corn.\"\n  ],\n  \"Thank you for using the Seed-Oil Sleuth!\"\n}\n```",
+      "student_response_readable": "```json\n{\n  \"Estimated total LA\": \"12.3 g\",\n  \"Daily calories\": 2000,\n  \"LA as % of calories\": \"0.6 %\",\n  \"Score\": \"Yellow\",\n  \"Ideal target\": \"<5 g AND <2 % of calories\",\n  \"Recommendations\": [\n    \"Swap store-bought mayo for avocado or olive oil-based spreads.\",\n    \"Choose chips or snacks baked in olive or avocado oil instead of fried varieties.\",\n    \"Use coconut aminos or homemade sauces without seed oils for stir-fry.\",\n    \"Opt for unprocessed snacks like nuts or fresh fruit as alternatives to kettle corn.\"\n  ],\n  \"Thank you for using the Seed-Oil Sleuth!\"\n}\n```",
       "evaluation_success": true
     },
     {
       "conversation_id": "6dd27a95-201c-426d-9b90-2fb87f51e2e0",
-      "evaluated_at": "2025-06-21T16:51:08.833933",
-      "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
-      "prompt_version": "v1.0",
+      "evaluated_at": "2025-06-24T11:02:28.098530",
+      "student_model": "openai:gpt-4.1-nano",
+      "prompt_version": "v1.1",
       "original_metadata": {
         "conversation_id": "6dd27a95-201c-426d-9b90-2fb87f51e2e0",
         "generated_at": "2025-06-21T16:49:34.393987",
@@ -205,15 +205,15 @@
         "user_explicitly_finished": false,
         "evaluation_notes": "Generated conversation - metadata includes completion analysis"
       },
-      "student_response": "{\n  \"message\": \"Great snack choice! The banana and almonds are seed-oil free. What about dinner plans - what's on the menu for tonight?\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\"margarine\", \"Lay's Classic potato chips\"],\n  \"reportIsComplete\": false\n}",
-      "student_response_readable": "{\n  \"message\": \"Great snack choice! The banana and almonds are seed-oil free. What about dinner plans - what's on the menu for tonight?\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"margarine\",\n    \"Lay's Classic potato chips\"\n  ],\n  \"reportIsComplete\": false\n}",
+      "student_response": "{\n  \"PossibleSeedOilSources\": [\n    {\n      \"Item\": \"Lay\u2019s Classic potato chips\",\n      \"Portion\": \"small bag\",\n      \"Category\": \"Snacks / packaged foods\"\n    }\n  ],\n  \"Observations\": \"The chips are fried in seed oils, likely soybean or sunflower oil. Bananas and almonds typically do not contain seed oils.\"\n}",
+      "student_response_readable": "{\n  \"PossibleSeedOilSources\": [\n    {\n      \"Item\": \"Lay\\u2019s Classic potato chips\",\n      \"Portion\": \"small bag\",\n      \"Category\": \"Snacks / packaged foods\"\n    }\n  ],\n  \"Observations\": \"The chips are fried in seed oils, likely soybean or sunflower oil. Bananas and almonds typically do not contain seed oils.\"\n}",
       "evaluation_success": true
     },
     {
       "conversation_id": "bd24b923-fc5b-4e40-af6b-2e8f82264208",
-      "evaluated_at": "2025-06-21T16:51:09.457839",
-      "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
-      "prompt_version": "v1.0",
+      "evaluated_at": "2025-06-24T11:02:29.697144",
+      "student_model": "openai:gpt-4.1-nano",
+      "prompt_version": "v1.1",
       "original_metadata": {
         "conversation_id": "bd24b923-fc5b-4e40-af6b-2e8f82264208",
         "generated_at": "2025-06-21T16:49:47.898230",
@@ -255,15 +255,15 @@
         "user_explicitly_finished": false,
         "evaluation_notes": "Generated conversation - metadata includes completion analysis"
       },
-      "student_response": "{\n  \"message\": \"You're doing great! I've got a good sense of your daily eats. Now, let's see where those seed oils might be hiding.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\"peanut butter\", \"Amy's Black Bean & Cheese frozen burrito\", \"Five Guys fries\", \"chocolate-chip muffin\"],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"still to be calculated\",\n      \"dailyCalories\": \"still to be calculated\",\n      \"laPercentageOfCalories\": \"still to be calculated\",\n      \"score\": \"still to be determined\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your report will be ready below!\",\n    \"practicalTips\": [\"consider swapping peanut butter with a natural alternative\", \"be mindful of processed foods like frozen burritos and muffins\"],\n    \"conclusion\": \"You're on the right track! Small tweaks can make a big difference.\"\n  },\n  \"reportIsComplete\": false\n}",
-      "student_response_readable": "{\n  \"message\": \"You're doing great! I've got a good sense of your daily eats. Now, let's see where those seed oils might be hiding.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"peanut butter\",\n    \"Amy's Black Bean & Cheese frozen burrito\",\n    \"Five Guys fries\",\n    \"chocolate-chip muffin\"\n  ],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"still to be calculated\",\n      \"dailyCalories\": \"still to be calculated\",\n      \"laPercentageOfCalories\": \"still to be calculated\",\n      \"score\": \"still to be determined\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your report will be ready below!\",\n    \"practicalTips\": [\n      \"consider swapping peanut butter with a natural alternative\",\n      \"be mindful of processed foods like frozen burritos and muffins\"\n    ],\n    \"conclusion\": \"You're on the right track! Small tweaks can make a big difference.\"\n  },\n  \"reportIsComplete\": false\n}",
+      "student_response": "```json\n{\n  \"estimated_linoleic_acid\": 7.2,\n  \"daily_calories\": 2000,\n  \"la_percentage\": 3.6,\n  \"score\": \"Yellow / Caution\",\n  \"ideal_target\": \"<5 g AND <2 % of calories\",\n  \"seed_oil_swaps\": [\n    \"Use avocado or olive oil instead of peanut butter for spreads\",\n    \"Choose microwave meals with olive oil or no added seed oils\",\n    \"Pick fries cooked in olive oil or baked, rather than fried in seed oil\",\n    \"Replace the chocolate-chip muffin with a fruit or homemade snack using nut butters\",\n    \"Switch almonds to roasted, dry-roasted nuts without added seed oils\"\n  ],\n  \"note\": \"Your seed oil intake is moderate but can be reduced further by choosing less processed options and swapping oils.\"\n}\n```",
+      "student_response_readable": "```json\n{\n  \"estimated_linoleic_acid\": 7.2,\n  \"daily_calories\": 2000,\n  \"la_percentage\": 3.6,\n  \"score\": \"Yellow / Caution\",\n  \"ideal_target\": \"<5 g AND <2 % of calories\",\n  \"seed_oil_swaps\": [\n    \"Use avocado or olive oil instead of peanut butter for spreads\",\n    \"Choose microwave meals with olive oil or no added seed oils\",\n    \"Pick fries cooked in olive oil or baked, rather than fried in seed oil\",\n    \"Replace the chocolate-chip muffin with a fruit or homemade snack using nut butters\",\n    \"Switch almonds to roasted, dry-roasted nuts without added seed oils\"\n  ],\n  \"note\": \"Your seed oil intake is moderate but can be reduced further by choosing less processed options and swapping oils.\"\n}\n```",
       "evaluation_success": true
     },
     {
       "conversation_id": "2bd91c0f-ed09-4b1f-9482-86a1426675f6",
-      "evaluated_at": "2025-06-21T16:51:09.737031",
-      "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
-      "prompt_version": "v1.0",
+      "evaluated_at": "2025-06-24T11:02:31.643142",
+      "student_model": "openai:gpt-4.1-nano",
+      "prompt_version": "v1.1",
       "original_metadata": {
         "conversation_id": "2bd91c0f-ed09-4b1f-9482-86a1426675f6",
         "generated_at": "2025-06-21T16:50:09.106705",
@@ -306,15 +306,15 @@
         "user_explicitly_finished": true,
         "evaluation_notes": "Generated conversation - metadata includes completion analysis"
       },
-      "student_response": "{\n  \"message\": \"Got your daily food rundown. Now let's look at cooking oils and packaged foods\u2014what oils do you use at home for cooking?\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\"vegetable oil\", \"peanut oil\", \"soybean oil\"],\n  \"report\": {},\n  \"reportIsComplete\": false\n}",
-      "student_response_readable": "{\n  \"message\": \"Got your daily food rundown. Now let's look at cooking oils and packaged foods\\u2014what oils do you use at home for cooking?\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"vegetable oil\",\n    \"peanut oil\",\n    \"soybean oil\"\n  ],\n  \"report\": {},\n  \"reportIsComplete\": false\n}",
+      "student_response": "```json\n{\n  \"Possible Seed-Oil Sources\": [\n    \"Vegetable blend used on the flat-top at Corner Caf\u00e9\",\n    \"Crumbled bacon (potentially cooked or processed with seed oil)\",\n    \"Baked Lay's chips\",\n    \"Chipotle mayo (likely contains seed oil)\",\n    \"Subway bread (may contain seed oil in the ingredients or preparation)\",\n    \"Pad Thai (potentially cooked with seed oil in the stir-fry or sauce)\"\n  ],\n  \"Estimated Total LA\": 12.5,\n  \"Daily Calories\": 2000,\n  \"LA as % of Calories\": 0.56,\n  \"Score\": \"Green\",\n  \"Ideal Target\": \"<5 g AND <2 % of calories\"\n}\n```",
+      "student_response_readable": "```json\n{\n  \"Possible Seed-Oil Sources\": [\n    \"Vegetable blend used on the flat-top at Corner Caf\u00e9\",\n    \"Crumbled bacon (potentially cooked or processed with seed oil)\",\n    \"Baked Lay's chips\",\n    \"Chipotle mayo (likely contains seed oil)\",\n    \"Subway bread (may contain seed oil in the ingredients or preparation)\",\n    \"Pad Thai (potentially cooked with seed oil in the stir-fry or sauce)\"\n  ],\n  \"Estimated Total LA\": 12.5,\n  \"Daily Calories\": 2000,\n  \"LA as % of Calories\": 0.56,\n  \"Score\": \"Green\",\n  \"Ideal Target\": \"<5 g AND <2 % of calories\"\n}\n```",
       "evaluation_success": true
     },
     {
       "conversation_id": "acb346e8-8e66-4f7a-abce-13b9dbfba7d4",
-      "evaluated_at": "2025-06-21T16:51:10.238030",
-      "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
-      "prompt_version": "v1.0",
+      "evaluated_at": "2025-06-24T11:02:33.078404",
+      "student_model": "openai:gpt-4.1-nano",
+      "prompt_version": "v1.1",
       "original_metadata": {
         "conversation_id": "acb346e8-8e66-4f7a-abce-13b9dbfba7d4",
         "generated_at": "2025-06-21T16:50:25.385932",
@@ -357,15 +357,15 @@
         "user_explicitly_finished": false,
         "evaluation_notes": "Generated conversation - metadata includes completion analysis"
       },
-      "student_response": "{\n  \"message\": \"So far, we've identified a few potential seed oil sources in your diet: Special K cereal, unsweetened almond milk, Hellmann's light mayo, and Lay's baked chips. Let's keep exploring to get a clearer picture. What did you have for an afternoon snack or beverage?\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\"Special K cereal\", \"almond milk\", \"Hellmann's light mayo\", \"Lay's baked chips\"],\n  \"report\": {\n    \"scores\": {},\n    \"summary\": \"\",\n    \"practicalTips\": [],\n    \"conclusion\": \"\"\n  },\n  \"reportIsComplete\": false\n}",
-      "student_response_readable": "{\n  \"message\": \"So far, we've identified a few potential seed oil sources in your diet: Special K cereal, unsweetened almond milk, Hellmann's light mayo, and Lay's baked chips. Let's keep exploring to get a clearer picture. What did you have for an afternoon snack or beverage?\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"Special K cereal\",\n    \"almond milk\",\n    \"Hellmann's light mayo\",\n    \"Lay's baked chips\"\n  ],\n  \"report\": {\n    \"scores\": {},\n    \"summary\": \"\",\n    \"practicalTips\": [],\n    \"conclusion\": \"\"\n  },\n  \"reportIsComplete\": false\n}",
+      "student_response": "{\n  \"total_la_grams\": 3.9,\n  \"calories\": 1800,\n  \"la_percentage\": 0.2,\n  \"score\": \"Green / Optimal\",\n  \"ideal_target\": \"<5 g AND <2 % of calories\",\n  \"main_contributors\": [\n    \"Special K cereal with seed oil in flakes\",\n    \"Canola soybean oil in mayo spread\",\n    \"Baked chips cooked in seed oil\"\n  ],\n  \"note\": \"Your seed-oil intake is well within the recommended threshold. Keep an eye on processed foods and spreads to maintain this level!\"\n}",
+      "student_response_readable": "{\n  \"total_la_grams\": 3.9,\n  \"calories\": 1800,\n  \"la_percentage\": 0.2,\n  \"score\": \"Green / Optimal\",\n  \"ideal_target\": \"<5 g AND <2 % of calories\",\n  \"main_contributors\": [\n    \"Special K cereal with seed oil in flakes\",\n    \"Canola soybean oil in mayo spread\",\n    \"Baked chips cooked in seed oil\"\n  ],\n  \"note\": \"Your seed-oil intake is well within the recommended threshold. Keep an eye on processed foods and spreads to maintain this level!\"\n}",
       "evaluation_success": true
     },
     {
       "conversation_id": "0dfceacf-ed75-4e88-bb52-2dc7b70c6f89",
-      "evaluated_at": "2025-06-21T16:51:10.566272",
-      "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
-      "prompt_version": "v1.0",
+      "evaluated_at": "2025-06-24T11:02:35.058113",
+      "student_model": "openai:gpt-4.1-nano",
+      "prompt_version": "v1.1",
       "original_metadata": {
         "conversation_id": "0dfceacf-ed75-4e88-bb52-2dc7b70c6f89",
         "generated_at": "2025-06-21T16:50:33.886399",
@@ -409,15 +409,15 @@
         "user_explicitly_finished": true,
         "evaluation_notes": "Generated conversation - metadata includes completion analysis"
       },
-      "student_response": "{\n  \"message\": \"Got it! Now, let's discuss cooking oils and packaged foods. What oils do you use for cooking at home besides butter and avocado oil?\",\n  \"emotion\": \"Informative\",\n  \"possibleSeedOilSources\": [\"Coffee-mate creamer\", \"Nature Valley Oats & Honey granola\", \"Campbell\u2019s Chunky Chicken Noodle Soup\", \"Clif Chocolate Chip protein bar\"],\n  \"reportIsComplete\": false\n}",
-      "student_response_readable": "{\n  \"message\": \"Got it! Now, let's discuss cooking oils and packaged foods. What oils do you use for cooking at home besides butter and avocado oil?\",\n  \"emotion\": \"Informative\",\n  \"possibleSeedOilSources\": [\n    \"Coffee-mate creamer\",\n    \"Nature Valley Oats & Honey granola\",\n    \"Campbell\\u2019s Chunky Chicken Noodle Soup\",\n    \"Clif Chocolate Chip protein bar\"\n  ],\n  \"reportIsComplete\": false\n}",
+      "student_response": "```json\n{\n  \"Estimated LA\": 4.8,\n  \"Daily Calories\": 2150,\n  \"LA as % of Calories\": 0.22,\n  \"Score\": \"Green\",\n  \"Ideal target\": \"< 5 g and < 2 % of calories\",\n  \"Suggested Swaps\": [\n    \"Use Greek yogurt plain or with minimal ingredients to avoid seed oils in flavored versions.\",\n    \"Choose granola with nuts and seeds only, or make your own without seed oils.\",\n    \"Select canned soups labeled as 'seed oil-free' or prepare homemade soup.\",\n    \"Opt for salads with homemade dressing using olive oil and vinegar or lemon juice.\",\n    \"Replace protein bars with options made at home or those specifically free of seed oils.\",\n    \"Check labels on snacks like chocolate or other packaged foods for seed oil content and choose alternatives.\"\n  ],\n  \"Thank you for sharing your food diary!\"\n}\n```",
+      "student_response_readable": "```json\n{\n  \"Estimated LA\": 4.8,\n  \"Daily Calories\": 2150,\n  \"LA as % of Calories\": 0.22,\n  \"Score\": \"Green\",\n  \"Ideal target\": \"< 5 g and < 2 % of calories\",\n  \"Suggested Swaps\": [\n    \"Use Greek yogurt plain or with minimal ingredients to avoid seed oils in flavored versions.\",\n    \"Choose granola with nuts and seeds only, or make your own without seed oils.\",\n    \"Select canned soups labeled as 'seed oil-free' or prepare homemade soup.\",\n    \"Opt for salads with homemade dressing using olive oil and vinegar or lemon juice.\",\n    \"Replace protein bars with options made at home or those specifically free of seed oils.\",\n    \"Check labels on snacks like chocolate or other packaged foods for seed oil content and choose alternatives.\"\n  ],\n  \"Thank you for sharing your food diary!\"\n}\n```",
       "evaluation_success": true
     },
     {
       "conversation_id": "3d0a2880-a5e2-413b-af79-6076fa38ec9a",
-      "evaluated_at": "2025-06-21T16:51:10.843804",
-      "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
-      "prompt_version": "v1.0",
+      "evaluated_at": "2025-06-24T11:02:36.909004",
+      "student_model": "openai:gpt-4.1-nano",
+      "prompt_version": "v1.1",
       "original_metadata": {
         "conversation_id": "3d0a2880-a5e2-413b-af79-6076fa38ec9a",
         "generated_at": "2025-06-21T16:50:48.066383",
@@ -463,15 +463,15 @@
         "user_explicitly_finished": false,
         "evaluation_notes": "Generated conversation - metadata includes completion analysis"
       },
-      "student_response": "{\n  \"message\": \"Great start! Let's review what we have so far and then explore cooking oils and packaged foods.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\"FuelFast400\", \"Burger Queen double cheeseburger\", \"fries\", \"cola\", \"rotisserie chicken\", \"nacho cheese chips\"],\n  \"reportIsComplete\": false\n}",
-      "student_response_readable": "{\n  \"message\": \"Great start! Let's review what we have so far and then explore cooking oils and packaged foods.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"FuelFast400\",\n    \"Burger Queen double cheeseburger\",\n    \"fries\",\n    \"cola\",\n    \"rotisserie chicken\",\n    \"nacho cheese chips\"\n  ],\n  \"reportIsComplete\": false\n}",
+      "student_response": "{\n  \"estimated_linoleic_acid\": 13.2,\n  \"daily_calories\": 2200,\n  \"la_percentage\": 5.4,\n  \"score\": \"Yellow / Caution\",\n  \"ideal_target\": \"Less than 5 g AND less than 2% of calories\",\n  \"suggestions\": [\n    \"Swap the bottled meal shake for one made with avocado or olive oil.\",\n    \"Choose a baked potato or salad with olive oil instead of fries or processed snacks.\",\n    \"Opt for grilled chicken or fish with simple seasoning rather than fried options.\",\n    \"Check labels for vegetable oils\u2014prefer products labeled as 'olive oil,' 'avocado oil,' or 'butter' when possible.\"\n  ],\n  \"note\": \"Your estimated LA intake is moderate, but reducing processed and fried foods can keep it lower.\"\n}",
+      "student_response_readable": "{\n  \"estimated_linoleic_acid\": 13.2,\n  \"daily_calories\": 2200,\n  \"la_percentage\": 5.4,\n  \"score\": \"Yellow / Caution\",\n  \"ideal_target\": \"Less than 5 g AND less than 2% of calories\",\n  \"suggestions\": [\n    \"Swap the bottled meal shake for one made with avocado or olive oil.\",\n    \"Choose a baked potato or salad with olive oil instead of fries or processed snacks.\",\n    \"Opt for grilled chicken or fish with simple seasoning rather than fried options.\",\n    \"Check labels for vegetable oils\\u2014prefer products labeled as 'olive oil,' 'avocado oil,' or 'butter' when possible.\"\n  ],\n  \"note\": \"Your estimated LA intake is moderate, but reducing processed and fried foods can keep it lower.\"\n}",
       "evaluation_success": true
     },
     {
       "conversation_id": "96116477-3ca2-4606-8396-d7170a7f83a7",
-      "evaluated_at": "2025-06-21T16:51:11.456020",
-      "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
-      "prompt_version": "v1.0",
+      "evaluated_at": "2025-06-24T11:02:38.712401",
+      "student_model": "openai:gpt-4.1-nano",
+      "prompt_version": "v1.1",
       "original_metadata": {
         "conversation_id": "96116477-3ca2-4606-8396-d7170a7f83a7",
         "generated_at": "2025-06-21T16:51:06.784907",
@@ -516,8 +516,8 @@
         "user_explicitly_finished": true,
         "evaluation_notes": "Generated conversation - metadata includes completion analysis"
       },
-      "student_response": "{\n  \"message\": \"Great job detailing your day! I've identified some potential seed oil sources: your roasted almonds, KIND protein bar, and Classico pasta sauce. Swapping these out could help lower your intake.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"roasted almonds\",\n    \"KIND protein bar\",\n    \"Classico Tomato & Basil pasta sauce\"\n  ],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"X.X g\",\n      \"dailyCalories\": \"XXXX kcal\",\n      \"laPercentageOfCalories\": \"X.X%\",\n      \"score\": \"Green|Yellow|Orange|Red\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your report will be ready after we review a few more details.\",\n    \"practicalTips\": [\n      \"Choose dry-roasted almonds without added oil\",\n      \"Opt for protein bars without seed oils\",\n      \"Select pasta sauces made with olive oil\"\n    ],\n    \"conclusion\": \"You're on the right track! Small tweaks can make a big difference.\"\n  },\n  \"reportIsComplete\": false\n}",
-      "student_response_readable": "{\n  \"message\": \"Great job detailing your day! I've identified some potential seed oil sources: your roasted almonds, KIND protein bar, and Classico pasta sauce. Swapping these out could help lower your intake.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"roasted almonds\",\n    \"KIND protein bar\",\n    \"Classico Tomato & Basil pasta sauce\"\n  ],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"X.X g\",\n      \"dailyCalories\": \"XXXX kcal\",\n      \"laPercentageOfCalories\": \"X.X%\",\n      \"score\": \"Green|Yellow|Orange|Red\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your report will be ready after we review a few more details.\",\n    \"practicalTips\": [\n      \"Choose dry-roasted almonds without added oil\",\n      \"Opt for protein bars without seed oils\",\n      \"Select pasta sauces made with olive oil\"\n    ],\n    \"conclusion\": \"You're on the right track! Small tweaks can make a big difference.\"\n  },\n  \"reportIsComplete\": false\n}",
+      "student_response": "{\n  \"name\": \"===== Linoleic-Acid Report =====\",\n  \"estimated_total_LA\": 9.2,\n  \"daily_calories\": 2000,\n  \"LA_as_percent_of_calories\": 4.1,\n  \"score\": \"Yellow / Caution\",\n  \"ideal_target\": \"<5 g AND <2% of calories\",\n  \"recommendations\": [\n    \"Swap roasted almonds for dry or raw almonds without added oil to reduce seed oil intake.\",\n    \"Choose protein bars with whole ingredients and no added seed oils, like dates or whey-based bars.\",\n    \"Select pasta sauces made solely with olive oil or homemade to avoid added seed oils.\"\n  ],\n  \"gratitude\": \"Thanks for sharing your meals\u2014you're doing great exploring healthier options!\"\n}",
+      "student_response_readable": "{\n  \"name\": \"===== Linoleic-Acid Report =====\",\n  \"estimated_total_LA\": 9.2,\n  \"daily_calories\": 2000,\n  \"LA_as_percent_of_calories\": 4.1,\n  \"score\": \"Yellow / Caution\",\n  \"ideal_target\": \"<5 g AND <2% of calories\",\n  \"recommendations\": [\n    \"Swap roasted almonds for dry or raw almonds without added oil to reduce seed oil intake.\",\n    \"Choose protein bars with whole ingredients and no added seed oils, like dates or whey-based bars.\",\n    \"Select pasta sauces made solely with olive oil or homemade to avoid added seed oils.\"\n  ],\n  \"gratitude\": \"Thanks for sharing your meals\\u2014you're doing great exploring healthier options!\"\n}",
       "evaluation_success": true
     }
   ]

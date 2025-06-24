@@ -1,3 +1,7 @@
 .aider*
 venv
+__pycache__*
+*.zip
+.DS_Store
+*scores*
 

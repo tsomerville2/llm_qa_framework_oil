@@ -47,65 +47,66 @@ You are an expert evaluator specializing in assessing the quality and completene
 
 ## EVALUATION CRITERIA (Total: 100 points)
 
-### 1. NUMERICAL ACCURACY & CALCULATIONS (25 points)
-**Score 0-25 points based on:**
+### 1. NUMERICAL ACCURACY & CALCULATIONS (50 points) - CRITICAL
+**Score 0-50 points based on:**
 - Are numeric values realistic and properly formatted? (not "X.X g" or "XXXX kcal")
 - Do calculations appear mathematically sound?
 - Is the LA percentage calculation reasonable? (LA grams * 9 kcal/g / total calories * 100)
 - Are daily calorie estimates reasonable? (1500-3000 kcal typical range)
-- Is the estimated total LA in grams realistic? (not obviously wrong)
+- Is the estimated total LA in grams realistic? (not obviously wrong or 0.0g when oils identified)
+
+**CRITICAL: ANY placeholder numbers ("X.X", "XXXX", "still to be calculated", etc.) = AUTOMATIC 0 POINTS**
+**CRITICAL: ANY unrealistic values (0.0g LA when seed oils identified) = AUTOMATIC 0 POINTS**
 
 **Scoring guide:**
-- 25 pts: All numbers are realistic, properly calculated, well-formatted
-- 20 pts: Most numbers good, minor calculation issues or formatting problems  
-- 15 pts: Some realistic numbers, but major calculation errors or unrealistic values
-- 5 pts: Mix of realistic and placeholder/unrealistic numbers (MAJOR PENALTY for placeholders)
-- 2 pts: Mostly placeholder numbers but some attempt at real values (SEVERE PENALTY)
-- 0 pts: All placeholder numbers ("X.X g", "XXXX kcal", etc.) (MAXIMUM PENALTY)
+- 50 pts: All numbers are realistic, properly calculated, well-formatted, NO placeholders
+- 40 pts: Most numbers good, minor calculation issues but NO placeholders
+- 30 pts: Some realistic numbers, major calculation errors but NO placeholders
+- 0 pts: ANY placeholder numbers OR unrealistic values (COMPLETE FAILURE - BAD MATH)
 
-### 2. SUMMARY QUALITY & SPECIFICITY (25 points)
-**Score 0-25 points based on:**
+### 2. SUMMARY QUALITY & SPECIFICITY (17 points)
+**Score 0-17 points based on:**
 - Is the summary specific to the user's actual food intake from the conversation?
 - Does it accurately reflect the seed oil sources identified?
 - Is it personalized rather than generic template text?
 - Does it provide meaningful insights about the user's LA intake level?
 
 **Scoring guide:**
-- 25 pts: Highly specific, personalized summary referencing actual foods discussed
-- 20 pts: Good specificity with some personalization
-- 15 pts: Somewhat specific but missing key details from conversation
-- 10 pts: Generic but relevant summary with minimal personalization
-- 5 pts: Very generic summary with placeholder language
+- 17 pts: Highly specific, personalized summary referencing actual foods discussed
+- 13 pts: Good specificity with some personalization
+- 10 pts: Somewhat specific but missing key details from conversation
+- 7 pts: Generic but relevant summary with minimal personalization
+- 3 pts: Very generic summary with placeholder language
 - 0 pts: Completely generic template ("Brief summary of findings")
 
-### 3. PRACTICAL TIPS RELEVANCE & QUALITY (25 points)
-**Score 0-25 points based on:**
+### 3. PRACTICAL TIPS RELEVANCE & QUALITY (17 points)
+**Score 0-17 points based on:**
 - Are tips specific to the actual foods/oils mentioned in the conversation?
 - Do they provide actionable, practical advice?
 - Are they relevant to the user's specific situation and intake level?
 - Do they demonstrate understanding of seed oil sources identified?
 
 **Scoring guide:**
-- 25 pts: Highly specific tips directly addressing foods from conversation
-- 20 pts: Good tips with clear relevance to user's situation
-- 15 pts: Relevant tips but somewhat generic
-- 10 pts: Basic tips with minimal connection to specific conversation
-- 5 pts: Very generic tips with little relevance
+- 17 pts: Highly specific tips directly addressing foods from conversation
+- 13 pts: Good tips with clear relevance to user's situation
+- 10 pts: Relevant tips but somewhat generic
+- 7 pts: Basic tips with minimal connection to specific conversation
+- 3 pts: Very generic tips with little relevance
 - 0 pts: Placeholder tips ("tip 1", "tip 2", "tip 3")
 
-### 4. CONCLUSION PERSONALIZATION & MOTIVATION (25 points)
-**Score 0-25 points based on:**
+### 4. CONCLUSION PERSONALIZATION & MOTIVATION (16 points)
+**Score 0-16 points based on:**
 - Is the conclusion personalized to the user's specific results?
 - Does it provide appropriate encouragement or motivation?
 - Is it specific rather than generic template language?
 - Does it acknowledge the user's current LA intake level appropriately?
 
 **Scoring guide:**
-- 25 pts: Highly personalized, motivating conclusion reflecting user's specific situation
-- 20 pts: Good personalization with appropriate tone
-- 15 pts: Somewhat personalized but missing specificity
-- 10 pts: Basic conclusion with minimal personalization
-- 5 pts: Generic conclusion with template language
+- 16 pts: Highly personalized, motivating conclusion reflecting user's specific situation
+- 12 pts: Good personalization with appropriate tone
+- 9 pts: Somewhat personalized but missing specificity
+- 6 pts: Basic conclusion with minimal personalization
+- 3 pts: Generic conclusion with template language
 - 0 pts: Completely generic ("Encouraging conclusion with next steps")
 
 ## ADDITIONAL QUALITY INDICATORS
@@ -164,10 +165,10 @@ Please provide your evaluation in the following JSON format:
 {{
   "overall_score": 0-100,
   "dimension_scores": {{
-    "numerical_accuracy": 0-25,
-    "summary_quality": 0-25, 
-    "practical_tips": 0-25,
-    "conclusion_quality": 0-25
+    "numerical_accuracy": 0-50,
+    "summary_quality": 0-17, 
+    "practical_tips": 0-17,
+    "conclusion_quality": 0-16
   }},
   "bonus_points": 0-5,
   "penalty_points": 0-10,
@@ -210,10 +211,10 @@ Please provide your evaluation in the following JSON format:
                     return {
                         "overall_score": 100,
                         "dimension_scores": {
-                            "numerical_accuracy": 25,
-                            "summary_quality": 25,
-                            "practical_tips": 25,
-                            "conclusion_quality": 25
+                            "numerical_accuracy": 50,
+                            "summary_quality": 17,
+                            "practical_tips": 17,
+                            "conclusion_quality": 16
                         },
                         "bonus_points": 0,
                         "penalty_points": 0,
@@ -424,10 +425,10 @@ Please provide your evaluation in the following JSON format:
         conclusion = dims.get("conclusion_quality", 0)
         
         insights = f"📊 Oil Contents Quality: {score}/100 ({quality})\n"
-        insights += f"   • Numerical Accuracy: {numerical}/25\n"
-        insights += f"   • Summary Quality: {summary}/25\n" 
-        insights += f"   • Practical Tips: {tips}/25\n"
-        insights += f"   • Conclusion Quality: {conclusion}/25\n"
+        insights += f"   • Numerical Accuracy: {numerical}/50 (CRITICAL - 50%)\n"
+        insights += f"   • Summary Quality: {summary}/17\n" 
+        insights += f"   • Practical Tips: {tips}/17\n"
+        insights += f"   • Conclusion Quality: {conclusion}/16\n"
         
         # Add strengths and weaknesses if available
         analysis = evaluation_result.get("detailed_analysis", {})

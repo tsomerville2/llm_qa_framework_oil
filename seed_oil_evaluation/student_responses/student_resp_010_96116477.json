@@ -1,8 +1,8 @@
 {
   "conversation_id": "96116477-3ca2-4606-8396-d7170a7f83a7",
-  "evaluated_at": "2025-06-21T16:51:11.456020",
-  "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
-  "prompt_version": "v1.0",
+  "evaluated_at": "2025-06-24T11:02:38.712401",
+  "student_model": "openai:gpt-4.1-nano",
+  "prompt_version": "v1.1",
   "original_metadata": {
     "conversation_id": "96116477-3ca2-4606-8396-d7170a7f83a7",
     "generated_at": "2025-06-21T16:51:06.784907",
@@ -47,7 +47,7 @@
     "user_explicitly_finished": true,
     "evaluation_notes": "Generated conversation - metadata includes completion analysis"
   },
-  "student_response": "{\n  \"message\": \"Great job detailing your day! I've identified some potential seed oil sources: your roasted almonds, KIND protein bar, and Classico pasta sauce. Swapping these out could help lower your intake.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"roasted almonds\",\n    \"KIND protein bar\",\n    \"Classico Tomato & Basil pasta sauce\"\n  ],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"X.X g\",\n      \"dailyCalories\": \"XXXX kcal\",\n      \"laPercentageOfCalories\": \"X.X%\",\n      \"score\": \"Green|Yellow|Orange|Red\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your report will be ready after we review a few more details.\",\n    \"practicalTips\": [\n      \"Choose dry-roasted almonds without added oil\",\n      \"Opt for protein bars without seed oils\",\n      \"Select pasta sauces made with olive oil\"\n    ],\n    \"conclusion\": \"You're on the right track! Small tweaks can make a big difference.\"\n  },\n  \"reportIsComplete\": false\n}",
-  "student_response_readable": "{\n  \"message\": \"Great job detailing your day! I've identified some potential seed oil sources: your roasted almonds, KIND protein bar, and Classico pasta sauce. Swapping these out could help lower your intake.\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"roasted almonds\",\n    \"KIND protein bar\",\n    \"Classico Tomato & Basil pasta sauce\"\n  ],\n  \"report\": {\n    \"scores\": {\n      \"estimatedTotalLa\": \"X.X g\",\n      \"dailyCalories\": \"XXXX kcal\",\n      \"laPercentageOfCalories\": \"X.X%\",\n      \"score\": \"Green|Yellow|Orange|Red\",\n      \"idealTarget\": \"1.5-3.0% of calories\"\n    },\n    \"summary\": \"Your report will be ready after we review a few more details.\",\n    \"practicalTips\": [\n      \"Choose dry-roasted almonds without added oil\",\n      \"Opt for protein bars without seed oils\",\n      \"Select pasta sauces made with olive oil\"\n    ],\n    \"conclusion\": \"You're on the right track! Small tweaks can make a big difference.\"\n  },\n  \"reportIsComplete\": false\n}",
+  "student_response": "{\n  \"name\": \"===== Linoleic-Acid Report =====\",\n  \"estimated_total_LA\": 9.2,\n  \"daily_calories\": 2000,\n  \"LA_as_percent_of_calories\": 4.1,\n  \"score\": \"Yellow / Caution\",\n  \"ideal_target\": \"<5 g AND <2% of calories\",\n  \"recommendations\": [\n    \"Swap roasted almonds for dry or raw almonds without added oil to reduce seed oil intake.\",\n    \"Choose protein bars with whole ingredients and no added seed oils, like dates or whey-based bars.\",\n    \"Select pasta sauces made solely with olive oil or homemade to avoid added seed oils.\"\n  ],\n  \"gratitude\": \"Thanks for sharing your meals\u2014you're doing great exploring healthier options!\"\n}",
+  "student_response_readable": "{\n  \"name\": \"===== Linoleic-Acid Report =====\",\n  \"estimated_total_LA\": 9.2,\n  \"daily_calories\": 2000,\n  \"LA_as_percent_of_calories\": 4.1,\n  \"score\": \"Yellow / Caution\",\n  \"ideal_target\": \"<5 g AND <2% of calories\",\n  \"recommendations\": [\n    \"Swap roasted almonds for dry or raw almonds without added oil to reduce seed oil intake.\",\n    \"Choose protein bars with whole ingredients and no added seed oils, like dates or whey-based bars.\",\n    \"Select pasta sauces made solely with olive oil or homemade to avoid added seed oils.\"\n  ],\n  \"gratitude\": \"Thanks for sharing your meals\\u2014you're doing great exploring healthier options!\"\n}",
   "evaluation_success": true
 }

@@ -1,8 +1,8 @@
 {
   "conversation_id": "2bd91c0f-ed09-4b1f-9482-86a1426675f6",
-  "evaluated_at": "2025-06-21T16:51:09.737031",
-  "student_model": "groq:meta-llama/llama-4-scout-17b-16e-instruct",
-  "prompt_version": "v1.0",
+  "evaluated_at": "2025-06-24T11:02:31.643142",
+  "student_model": "openai:gpt-4.1-nano",
+  "prompt_version": "v1.1",
   "original_metadata": {
     "conversation_id": "2bd91c0f-ed09-4b1f-9482-86a1426675f6",
     "generated_at": "2025-06-21T16:50:09.106705",
@@ -45,7 +45,7 @@
     "user_explicitly_finished": true,
     "evaluation_notes": "Generated conversation - metadata includes completion analysis"
   },
-  "student_response": "{\n  \"message\": \"Got your daily food rundown. Now let's look at cooking oils and packaged foods\u2014what oils do you use at home for cooking?\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\"vegetable oil\", \"peanut oil\", \"soybean oil\"],\n  \"report\": {},\n  \"reportIsComplete\": false\n}",
-  "student_response_readable": "{\n  \"message\": \"Got your daily food rundown. Now let's look at cooking oils and packaged foods\\u2014what oils do you use at home for cooking?\",\n  \"emotion\": \"Supportive\",\n  \"possibleSeedOilSources\": [\n    \"vegetable oil\",\n    \"peanut oil\",\n    \"soybean oil\"\n  ],\n  \"report\": {},\n  \"reportIsComplete\": false\n}",
+  "student_response": "```json\n{\n  \"Possible Seed-Oil Sources\": [\n    \"Vegetable blend used on the flat-top at Corner Caf\u00e9\",\n    \"Crumbled bacon (potentially cooked or processed with seed oil)\",\n    \"Baked Lay's chips\",\n    \"Chipotle mayo (likely contains seed oil)\",\n    \"Subway bread (may contain seed oil in the ingredients or preparation)\",\n    \"Pad Thai (potentially cooked with seed oil in the stir-fry or sauce)\"\n  ],\n  \"Estimated Total LA\": 12.5,\n  \"Daily Calories\": 2000,\n  \"LA as % of Calories\": 0.56,\n  \"Score\": \"Green\",\n  \"Ideal Target\": \"<5 g AND <2 % of calories\"\n}\n```",
+  "student_response_readable": "```json\n{\n  \"Possible Seed-Oil Sources\": [\n    \"Vegetable blend used on the flat-top at Corner Caf\u00e9\",\n    \"Crumbled bacon (potentially cooked or processed with seed oil)\",\n    \"Baked Lay's chips\",\n    \"Chipotle mayo (likely contains seed oil)\",\n    \"Subway bread (may contain seed oil in the ingredients or preparation)\",\n    \"Pad Thai (potentially cooked with seed oil in the stir-fry or sauce)\"\n  ],\n  \"Estimated Total LA\": 12.5,\n  \"Daily Calories\": 2000,\n  \"LA as % of Calories\": 0.56,\n  \"Score\": \"Green\",\n  \"Ideal Target\": \"<5 g AND <2 % of calories\"\n}\n```",
   "evaluation_success": true
 }
