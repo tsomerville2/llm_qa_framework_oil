@@ -8,6 +8,7 @@ import os
 import sys
 from datetime import datetime
 from typing import List, Dict
+import statistics
 
 try:
     import questionary
@@ -22,6 +23,12 @@ try:
     INTERACTIVE_AVAILABLE = True
 except ImportError:
     INTERACTIVE_AVAILABLE = False
+
+try:
+    import plotext as plt
+    PLOTEXT_AVAILABLE = True
+except ImportError:
+    PLOTEXT_AVAILABLE = False
 
 from scoring_database import ScoringDatabase
 
@@ -82,6 +89,7 @@ class ScoringDashboard:
         table.add_column("Judge", style="blue", width=12)
         table.add_column("Prompt", style="yellow", width=8)
         table.add_column("Score", justify="right", style="bright_red", width=10)
+        table.add_column("Time", justify="right", style="magenta", width=7)
         table.add_column("Date", style="dim", width=14)
         
         for run in runs:
@@ -119,12 +127,20 @@ class ScoringDashboard:
             
             date = run.get("timestamp", "")[:16].replace("T", " ")[-14:]  # Just time, shorter
             
+            # Get timing information if available
+            response_time = run.get("response_time_seconds")
+            if response_time is not None:
+                time_str = f"{response_time:.1f}s"
+            else:
+                time_str = "N/A"
+            
             table.add_row(
                 run_id, 
                 student_model, 
                 judge_model,
                 prompt_version, 
                 f"[{score_style}]{score}[/{score_style}]",
+                time_str,
                 date
             )
         
@@ -399,6 +415,7 @@ class ScoringDashboard:
             student_model = run.get("student_model", "unknown")
             prompt_version = run.get("prompt_version", "unknown")
             overall_score = run.get("overall_score", 0)
+            response_time = run.get("response_time_seconds")
             
             # Clean up model name for display
             if ":" in student_model:
@@ -411,18 +428,22 @@ class ScoringDashboard:
             if key not in model_performance:
                 model_performance[key] = {
                     "scores": [],
+                    "response_times": [],
                     "model": clean_model,
                     "prompt": prompt_version
                 }
             
             model_performance[key]["scores"].append(overall_score)
+            if response_time is not None:
+                model_performance[key]["response_times"].append(response_time)
         
         # Calculate statistics
         model_stats = {}
         for key, data in model_performance.items():
             scores = data["scores"]
+            response_times = data["response_times"]
             if scores:
-                model_stats[key] = {
+                stats = {
                     "model": data["model"],
                     "prompt": data["prompt"],
                     "avg_score": sum(scores) / len(scores),
@@ -430,6 +451,14 @@ class ScoringDashboard:
                     "min_score": min(scores),
                     "run_count": len(scores)
                 }
+                
+                # Calculate average response time
+                if response_times:
+                    stats["avg_response_time"] = sum(response_times) / len(response_times)
+                else:
+                    stats["avg_response_time"] = None
+                
+                model_stats[key] = stats
         
         # Create comparison table
         table = Table(title="🏆 Model Performance Comparison Matrix", show_header=True, header_style="bold magenta")
@@ -439,6 +468,7 @@ class ScoringDashboard:
         table.add_column("Avg Score", justify="right", style="cyan", width=10)
         table.add_column("Best", justify="right", style="bright_green", width=8)
         table.add_column("Worst", justify="right", style="red", width=8)
+        table.add_column("Avg Time", justify="right", style="magenta", width=8)
         table.add_column("Performance", style="blue", width=25)
         
         # Sort by average score descending
@@ -468,6 +498,13 @@ class ScoringDashboard:
             else:
                 performance_style = "red"
             
+            # Format timing display
+            avg_time = stats.get("avg_response_time")
+            if avg_time is not None:
+                time_str = f"{avg_time:.1f}s"
+            else:
+                time_str = "N/A"
+            
             table.add_row(
                 model,
                 stats["prompt"],
@@ -475,6 +512,7 @@ class ScoringDashboard:
                 f"{avg_score:.1f}/100",
                 f"{stats['max_score']:.1f}",
                 f"{stats['min_score']:.1f}",
+                time_str,
                 f"[{performance_style}]{bar}[/{performance_style}] {percentage:.1f}%"
             )
         
@@ -583,6 +621,300 @@ class ScoringDashboard:
         self.console.print()
         self.console.print(table)
     
+    def show_timing_analysis_menu(self):
+        """Show timing analysis menu options"""
+        if not PLOTEXT_AVAILABLE:
+            self.console.print("❌ Timing analysis requires 'plotext' package. Install with: pip install plotext")
+            return
+        
+        if not INTERACTIVE_AVAILABLE:
+            print("❌ Interactive mode requires 'questionary' and 'rich' packages.")
+            return
+        
+        while True:
+            self.console.print()
+            choices = [
+                questionary.Choice("📊 Multi-Model Timing Comparison", "multi_model"),
+                questionary.Choice("📈 Single Model Detailed Analysis", "single_model"),
+                questionary.Choice("⬅️ Back to Main Menu", "back")
+            ]
+            
+            action = questionary.select(
+                "Choose timing analysis:",
+                choices=choices,
+                instruction="(Use arrow keys and Enter)"
+            ).ask()
+            
+            if action == "back" or action is None:
+                break
+            elif action == "multi_model":
+                self.show_multi_model_timing_comparison()
+            elif action == "single_model":
+                self.show_single_model_timing_analysis()
+            
+            if action != "back":
+                input("\n📱 Press Enter to continue...")
+                plt.clear_terminal()
+    
+    def get_timing_data(self):
+        """Collect timing data from student response files"""
+        import json
+        import glob
+        
+        timing_data = {}
+        
+        # Read from student responses directory
+        # Try multiple possible paths depending on where this is called from
+        possible_paths = [
+            "student_responses/student_resp_*.json",  # From seed_oil_evaluation directory
+            "../seed_oil_evaluation/student_responses/student_resp_*.json",  # From root
+            "seed_oil_evaluation/student_responses/student_resp_*.json"  # From root
+        ]
+        
+        student_files = []
+        for path_pattern in possible_paths:
+            files = glob.glob(path_pattern)
+            if files:
+                student_files = files
+                break
+        
+        for file_path in student_files:
+            try:
+                with open(file_path, 'r') as f:
+                    data = json.load(f)
+                
+                student_model = data.get("student_model", "unknown")
+                response_time = data.get("response_time_seconds")
+                
+                if response_time is not None:
+                    # Clean up model name
+                    if ":" in student_model:
+                        clean_model = student_model.split(":", 1)[1]
+                    else:
+                        clean_model = student_model
+                    
+                    if clean_model not in timing_data:
+                        timing_data[clean_model] = []
+                    timing_data[clean_model].append(response_time)
+            except (json.JSONDecodeError, KeyError, FileNotFoundError):
+                continue
+        
+        # Also check evaluation summary
+        summary_paths = [
+            "student_responses/evaluation_summary.json",  # From seed_oil_evaluation directory
+            "../seed_oil_evaluation/student_responses/evaluation_summary.json",  # From root
+            "seed_oil_evaluation/student_responses/evaluation_summary.json"  # From root
+        ]
+        
+        for summary_path in summary_paths:
+            try:
+                with open(summary_path, 'r') as f:
+                    summary = json.load(f)
+                
+                for result in summary.get("results", []):
+                    student_model = result.get("student_model", "unknown")
+                    response_time = result.get("response_time_seconds")
+                    
+                    if response_time is not None:
+                        # Clean up model name
+                        if ":" in student_model:
+                            clean_model = student_model.split(":", 1)[1]
+                        else:
+                            clean_model = student_model
+                        
+                        if clean_model not in timing_data:
+                            timing_data[clean_model] = []
+                        timing_data[clean_model].append(response_time)
+                break  # Successfully found and processed file
+            except (json.JSONDecodeError, KeyError, FileNotFoundError):
+                continue  # Try next path
+        
+        return timing_data
+    
+    def show_multi_model_timing_comparison(self):
+        """Show statistical comparison of timing across all models"""
+        timing_data = self.get_timing_data()
+        
+        if not timing_data:
+            self.console.print("❌ No timing data available")
+            return
+        
+        self.console.print("📊 Multi-Model Timing Comparison")
+        self.console.print("=" * 50)
+        
+        # Calculate statistics for each model
+        stats_table = Table(title="📈 Response Time Statistics", show_header=True, header_style="bold magenta")
+        stats_table.add_column("Model", style="green", width=25)
+        stats_table.add_column("Count", justify="center", style="dim", width=6)
+        stats_table.add_column("Mean", justify="right", style="cyan", width=8)
+        stats_table.add_column("Median", justify="right", style="blue", width=8)
+        stats_table.add_column("Std Dev", justify="right", style="yellow", width=8)
+        stats_table.add_column("Min", justify="right", style="green", width=8)
+        stats_table.add_column("Max", justify="right", style="red", width=8)
+        stats_table.add_column("P95", justify="right", style="orange1", width=8)
+        
+        model_stats = {}
+        for model, times in timing_data.items():
+            if len(times) >= 2:  # Need at least 2 data points for std dev
+                model_stats[model] = {
+                    'count': len(times),
+                    'mean': statistics.mean(times),
+                    'median': statistics.median(times),
+                    'stdev': statistics.stdev(times),
+                    'min': min(times),
+                    'max': max(times),
+                    'p95': sorted(times)[int(0.95 * len(times))]
+                }
+        
+        # Sort by mean response time
+        for model in sorted(model_stats.keys(), key=lambda x: model_stats[x]['mean']):
+            stats = model_stats[model]
+            stats_table.add_row(
+                model[:24] + "..." if len(model) > 24 else model,
+                str(stats['count']),
+                f"{stats['mean']:.2f}s",
+                f"{stats['median']:.2f}s",
+                f"{stats['stdev']:.2f}s",
+                f"{stats['min']:.2f}s",
+                f"{stats['max']:.2f}s",
+                f"{stats['p95']:.2f}s"
+            )
+        
+        self.console.print()
+        self.console.print(stats_table)
+        
+        # Create box plot comparison using plotext
+        plt.clear_terminal()
+        plt.title("Response Time Distribution by Model")
+        plt.xlabel("Models")
+        plt.ylabel("Response Time (seconds)")
+        
+        # Prepare data for box plot
+        models = []
+        all_times = []
+        positions = []
+        
+        for i, (model, times) in enumerate(timing_data.items()):
+            if len(times) >= 3:  # Need reasonable sample size
+                models.append(model[:15])  # Truncate for display
+                
+                # Create box plot data manually
+                q1 = sorted(times)[int(0.25 * len(times))]
+                q3 = sorted(times)[int(0.75 * len(times))]
+                median = statistics.median(times)
+                
+                # Plot quartile boxes
+                plt.scatter([i] * len(times), times, marker="dot")
+                
+        plt.xticks(range(len(models)), models)
+        plt.show()
+    
+    def show_single_model_timing_analysis(self):
+        """Show detailed timing analysis for a selected model"""
+        timing_data = self.get_timing_data()
+        
+        if not timing_data:
+            self.console.print("❌ No timing data available")
+            return
+        
+        # Let user select a model
+        model_choices = [model for model in timing_data.keys() if len(timing_data[model]) >= 3]
+        
+        if not model_choices:
+            self.console.print("❌ No models with sufficient timing data (need at least 3 samples)")
+            return
+        
+        selected_model = questionary.select(
+            "Select model for detailed analysis:",
+            choices=model_choices,
+            instruction="(Use arrow keys)"
+        ).ask()
+        
+        if not selected_model:
+            return
+        
+        times = timing_data[selected_model]
+        
+        self.console.print(f"📈 Detailed Analysis: {selected_model}")
+        self.console.print("=" * 60)
+        
+        # Statistical analysis
+        mean_time = statistics.mean(times)
+        median_time = statistics.median(times)
+        std_dev = statistics.stdev(times) if len(times) > 1 else 0
+        min_time = min(times)
+        max_time = max(times)
+        
+        # Percentiles
+        sorted_times = sorted(times)
+        p25 = sorted_times[int(0.25 * len(times))]
+        p75 = sorted_times[int(0.75 * len(times))]
+        p90 = sorted_times[int(0.90 * len(times))]
+        p95 = sorted_times[int(0.95 * len(times))]
+        p99 = sorted_times[int(0.99 * len(times))] if len(times) >= 10 else max_time
+        
+        # Create detailed statistics table
+        detail_table = Table(title=f"📊 {selected_model} - Response Time Analysis", show_header=True, header_style="bold magenta")
+        detail_table.add_column("Metric", style="cyan", width=20)
+        detail_table.add_column("Value", style="green", width=15)
+        detail_table.add_column("Interpretation", style="dim", width=30)
+        
+        detail_table.add_row("Sample Size", str(len(times)), "Number of API calls measured")
+        detail_table.add_row("Mean", f"{mean_time:.3f}s", "Average response time")
+        detail_table.add_row("Median", f"{median_time:.3f}s", "50th percentile (typical case)")
+        detail_table.add_row("Std Deviation", f"{std_dev:.3f}s", "Variability in response times")
+        detail_table.add_row("Min", f"{min_time:.3f}s", "Fastest response")
+        detail_table.add_row("Max", f"{max_time:.3f}s", "Slowest response")
+        detail_table.add_row("", "", "")
+        detail_table.add_row("25th Percentile", f"{p25:.3f}s", "25% of calls faster than this")
+        detail_table.add_row("75th Percentile", f"{p75:.3f}s", "75% of calls faster than this")
+        detail_table.add_row("90th Percentile", f"{p90:.3f}s", "90% of calls faster than this")
+        detail_table.add_row("95th Percentile", f"{p95:.3f}s", "95% of calls faster than this")
+        detail_table.add_row("99th Percentile", f"{p99:.3f}s", "99% of calls faster than this")
+        
+        # Performance assessment
+        cv = std_dev / mean_time if mean_time > 0 else 0
+        if cv < 0.1:
+            consistency = "Very Consistent"
+        elif cv < 0.2:
+            consistency = "Consistent"
+        elif cv < 0.3:
+            consistency = "Moderately Variable"
+        else:
+            consistency = "Highly Variable"
+        
+        detail_table.add_row("", "", "")
+        detail_table.add_row("Consistency", consistency, f"CV = {cv:.3f}")
+        
+        self.console.print()
+        self.console.print(detail_table)
+        
+        # Create histogram using plotext
+        plt.clear_terminal()
+        plt.title(f"Response Time Distribution - {selected_model}")
+        plt.xlabel("Response Time (seconds)")
+        plt.ylabel("Frequency")
+        
+        # Create histogram bins
+        num_bins = min(10, len(times) // 2)
+        plt.hist(times, bins=num_bins)
+        plt.show()
+        
+        self.console.print()
+        
+        # Time series plot
+        plt.clear_terminal()
+        plt.title(f"Response Time Trend - {selected_model}")
+        plt.xlabel("Call Number")
+        plt.ylabel("Response Time (seconds)")
+        
+        x_values = list(range(1, len(times) + 1))
+        plt.plot(x_values, times, marker="braille")
+        
+        # Add mean line
+        plt.plot(x_values, [mean_time] * len(times), marker="dot", label="Mean")
+        plt.show()
+    
     def interactive_dashboard(self):
         """Main interactive dashboard"""
         if not INTERACTIVE_AVAILABLE:
@@ -601,6 +933,7 @@ class ScoringDashboard:
                 questionary.Choice("📈 Latest Runs", "latest"),
                 questionary.Choice("🏆 Model Comparison Matrix", "model_comparison"),
                 questionary.Choice("📊 Detailed Dimension Analysis", "dimension_analysis"),
+                questionary.Choice("⏱️ Timing Analysis", "timing"),
                 questionary.Choice("🛢️ Oil Quality Analysis", "oil_quality"),
                 questionary.Choice("🏆 Prompt Performance", "performance"),
                 questionary.Choice("⚖️ Compare Prompts", "compare"),
@@ -634,6 +967,9 @@ class ScoringDashboard:
             
             elif action == "dimension_analysis":
                 self.show_detailed_dimension_analysis()
+            
+            elif action == "timing":
+                self.show_timing_analysis_menu()
             
             elif action == "oil_quality":
                 self.show_oil_quality_analysis()

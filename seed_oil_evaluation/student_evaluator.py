@@ -7,6 +7,7 @@ Uses Groq Llama-4 Maverick to evaluate conversations with the Seed Oil Sleuth sy
 import os
 import json
 import uuid
+import time
 from datetime import datetime
 from model_selector import select_model, get_model_client
 
@@ -81,6 +82,9 @@ class StudentEvaluator:
             })
         
         try:
+            # Start timing
+            start_time = time.time()
+            
             # Handle different providers
             if self.provider == 'openai':
                 if 'o1' in self.model or 'o3' in self.model:
@@ -122,12 +126,16 @@ class StudentEvaluator:
                     seed=42,
                 )
             
+            # End timing
+            end_time = time.time()
+            response_time = end_time - start_time
+            
             student_response = response.choices[0].message.content
-            return student_response
+            return student_response, response_time
             
         except Exception as e:
             print(f"Error evaluating conversation {conversation_data['metadata']['conversation_id']}: {e}")
-            return None
+            return None, None
     
     def evaluate_all_conversations(self):
         """Evaluate all conversations and save results"""
@@ -136,14 +144,15 @@ class StudentEvaluator:
         evaluation_results = []
         
         print("🤖 STUDENT RESPONSES")
-        print(f"{'#':<2} {'ID':<8} {'Type':<8} {'Message':<7} {'Emotion':<7} {'Sources':<7} {'Report':<6} {'Complete':<8} {'Scores':<6} {'Summary':<7} {'Tips':<4} {'Conclusion':<10}")
+        print(f"{'#':<2} {'ID':<8} {'Type':<8} {'Message':<7} {'Emotion':<7} {'Sources':<7} {'Report':<6} {'Complete':<8} {'Scores':<6} {'Summary':<7} {'Tips':<4} {'Conclusion':<10} {'Time(s)':<8}")
         
         for i, conversation_data in enumerate(conversations, 1):
             conv_id = conversation_data["metadata"]["conversation_id"]
             
-            student_response = self.evaluate_conversation(conversation_data)
+            result = self.evaluate_conversation(conversation_data)
             
-            if student_response:
+            if result and result[0]:
+                student_response, response_time = result
                 # Parse student response for readability
                 try:
                     parsed_response = json.loads(student_response)
@@ -159,6 +168,7 @@ class StudentEvaluator:
                     "original_metadata": conversation_data["metadata"],
                     "student_response": student_response,
                     "student_response_readable": student_response_readable,
+                    "response_time_seconds": round(response_time, 3),
                     "evaluation_success": True
                 }
                 
@@ -172,7 +182,7 @@ class StudentEvaluator:
                 # Analyze and display student response details
                 response_analysis = self.analyze_student_response(student_response)
                 conv_type = conversation_data["metadata"].get("conversation_type", "unknown")
-                self.print_student_analysis(i, conv_id, conv_type, response_analysis, filename)
+                self.print_student_analysis(i, conv_id, conv_type, response_analysis, filename, response_time)
                 
                 evaluation_results.append(evaluation_result)
                 
@@ -184,6 +194,7 @@ class StudentEvaluator:
                     "prompt_version": self.prompt_version,
                     "original_metadata": conversation_data["metadata"],
                     "student_response": None,
+                    "response_time_seconds": None,
                     "evaluation_success": False,
                     "error": "Failed to generate response"
                 }
@@ -237,11 +248,12 @@ class StudentEvaluator:
         
         return analysis
     
-    def print_student_analysis(self, conv_num: int, conv_id: str, conv_type: str, analysis: dict, filename: str):
+    def print_student_analysis(self, conv_num: int, conv_id: str, conv_type: str, analysis: dict, filename: str, response_time: float = None):
         """Print clean analysis of student response"""
         
         if not analysis["valid_json"]:
-            print(f"{conv_num:2d} {conv_id[:8]} {conv_type:<8s} ❌ INVALID JSON")
+            time_str = f"{response_time:.1f}s" if response_time else "N/A"
+            print(f"{conv_num:2d} {conv_id[:8]} {conv_type:<8s} ❌ INVALID JSON {time_str:>8s}")
             return
         
         # Format single clean row with manual alignment
@@ -258,7 +270,10 @@ class StudentEvaluator:
         # Shorten conversation type for display
         type_short = conv_type.replace("positive_complete", "POS").replace("negative_incomplete", "NEG").replace("user_requested", "USER")
         
-        print(f"{conv_num:2d} {conv_id[:8]} {type_short:<8s} {msg:<7s} {emo:<7s} {src:<7s} {prs:<6s} {cmp:<8s} {scr:<6s} {sum_field:<7s} {tip:<4s} {con:<10s}")
+        # Format timing
+        time_str = f"{response_time:.1f}s" if response_time else "N/A"
+        
+        print(f"{conv_num:2d} {conv_id[:8]} {type_short:<8s} {msg:<7s} {emo:<7s} {src:<7s} {prs:<6s} {cmp:<8s} {scr:<6s} {sum_field:<7s} {tip:<4s} {con:<10s} {time_str:>8s}")
 
 if __name__ == "__main__":
     evaluator = StudentEvaluator()
